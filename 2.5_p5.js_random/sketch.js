@@ -27,8 +27,8 @@ function setup(){
 
 //Og så bruger vi variablene til at tegne en enkel cirkel på et bestemt sted 
 function draw(){
-    spot.x = random(0,800);
-    spot.y = random(0,800);
+    spot.x = random(0,500);
+    spot.y = random(0,500);
     spot.d = random(0,50);
     col.r = random(0,255);
     col.t = random(0,200);
