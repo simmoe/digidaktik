@@ -16,7 +16,7 @@ function setup() {
 
 function draw() {
   console.log(speed);
-  speed = map(mouseX, 2, width, 0, 50);
+  speed = map(mouseX+2, 0, width, 0, 50);
   background(0);
   translate(width / 2, height / 2);
   for (var i = 0; i < stars.length; i++) {
