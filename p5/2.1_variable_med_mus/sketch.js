@@ -1,4 +1,5 @@
 /*
+Se en bedre formidling af indholdet end min:
 https://vimeo.com/channels/learningp5js/138327548
 */
 
