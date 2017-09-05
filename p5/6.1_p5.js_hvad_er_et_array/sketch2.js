@@ -12,12 +12,14 @@ var words = ["rainbow", "heart", "purple", "friendship", "love"];
 var index = 0;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(400, 300);
 }
 
 function draw() {
-
   background(0);
+  fill(255);
+  textSize(12);
+    text("Klik for at skifte mellem ord i arrayet",12,100);
 
   fill(255);
   textSize(32);
