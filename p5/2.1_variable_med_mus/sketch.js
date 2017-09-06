@@ -3,7 +3,6 @@ Se en endnu bedre formidling af indholdet end min:
 https://vimeo.com/channels/learningp5js/138327548
 */
 
-
 //Setup() funktionen skal altid være i en p5.js sketch. Det er her alle forberedelsnerne til skitsen bliver  udført.  
 function setup() {
   //createcanvas laver selve den skærm programmet kører i - her 600x400 pixels    
@@ -43,7 +42,7 @@ Ja..
 
 4. ..men hvad med quad()?
 
-5. ..arc()..?
+5. ..arc()..? -og for de avancerede: kan du tegne flere arcs så de viser en "tredimensionel" firkant?
 
 6. Kan man tegne flere former oven i hinanden i programmet?
 
@@ -53,5 +52,6 @@ Ja..
 
 9. En anden irriterende ting er, at programmet HELE tiden tegner. Prøv at se om du kan implementere skitsen, så du kan klikke med musen og pause din tegning, indtil du klikker igen
 
+10. så kunne det jo være at man gerne ville skifte farve.  Prøv at implementere en slider() man kan skifte rød/grøn/blå fyldfarve med i figuren 
 
 */
