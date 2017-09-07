@@ -36,3 +36,13 @@ function draw() {
   
   ellipse(300, 200, 100, 100);
 }
+
+/*
+
+OPGAVER 
+
+1  Prøv at få programmet til at tegne en anden baggrundsfarve hvis X er mindre end 300
+
+2  Få programmet til at skifte mellem tre forskellige farver i cirklen. Når musens X er hhv før, på og efter cirklen 
+
+*/

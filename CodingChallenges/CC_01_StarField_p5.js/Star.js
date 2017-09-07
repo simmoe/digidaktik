@@ -38,4 +38,5 @@ function Star() {
     line(px, py, sx, sy);
 
   }
+
 }

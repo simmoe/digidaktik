@@ -18,8 +18,6 @@ function draw() {
   move();
   bounce();
   display();
-  
-  
 }
 
 function bounce() {
