@@ -10,7 +10,7 @@ var bubbles = [];
 
 function setup() {
   createCanvas(600, 400);
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 400; i++) {
     bubbles[i] = new Bubble();
   }
 }

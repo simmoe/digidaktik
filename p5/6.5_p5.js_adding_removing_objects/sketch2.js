@@ -33,6 +33,7 @@ function Bubble(x, y) {
 
   this.display = function() {
     stroke(255);
+    strokeWeight(2);
     fill(255, 0, 150, 50);
     ellipse(this.x, this.y, 24, 24);
   }
