@@ -43,7 +43,6 @@ function Bubble() {
   }  
 }
 
-
 /*
 OPGAVER 
 
@@ -53,5 +52,7 @@ OPGAVER
 4  Prøv at give musemarkøren indflydelse på objekternes hastighed 
 5  Prøv at implementere et nyt objekt - squares  
 6 Prøv at instantiere 10 squares  og hundrede bubbles
-7 Prøv at give musemarkøren indflydelse på objekternes retning (Hint: prøv at bruge map funktionen til det, så du får en værdi mellem -1 og 1) 
+7 Prøv at flytte hele Bubble(){} koden over i en ny fil du kalder for Bubbles.js. Gå så ind i index.hml og se godt efter hvordan de andre filer er blevet linket til. Se om du kan få koden til at virke med Bubble i en selvstændig fil. 
+8 Prøv at give musemarkøren indflydelse på objekternes retning (Hint: prøv at bruge map funktionen til det, så du får en værdi mellem -1 og 1) 
+
 */
