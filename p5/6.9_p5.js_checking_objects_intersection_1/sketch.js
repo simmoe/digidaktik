@@ -17,8 +17,6 @@ function setup() {
 
 function draw() {
   background(0);
-  textSize(44);
-  text(points,30,50);
   //update flytter boblerne rundt og display viser dem 
   b1.update();
   b2.update();
