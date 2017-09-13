@@ -28,7 +28,7 @@ function draw() {
   fill(250, 200, 200);
   //Fordi vi har oprettet OBJEKTET circle kan vi tilgå dets indre variable med dot-notation (circle.x) 
   ellipse(circle.x, circle.y, circle.diameter, circle.diameter);
-  
+    
   circle.x = circle.x + 1;
 }
 
@@ -41,8 +41,11 @@ Hints:
 Skærmens bredde kan tilgås med: width
 I får brug for at objektet circle har en variabel mere, fx kan i kalde den: speed
 
+2  Prøv at lave flere objekter - fx square, crazyCircle eller andet - 
 
+3  Nu bliver det lidt svært. I referencen finder i ud af hvordan man opretter et image og bruger det i sin skitse. Start med at få oprettet et billede og vist det i programmet
 
+4  Prøv nu at lave billedet så det er en del af et objekt 
 
-
+5  og få det så til at bevæge sig sammen med, eller på tværs af cirklen
 */
