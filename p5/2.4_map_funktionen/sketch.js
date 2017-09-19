@@ -29,6 +29,5 @@ OPGAVER
 
 3  Prøv at gøre så den nye cirkel styrer den blå farve
 
-4 Prøv at indsætte en slider som styrer cirklernes farve fra hvid til sort
-
+4 Avanceret: kan du mon finde ud af at tage en farveværdi fra et videoinput og mappe den til cirklens farve?
 */
