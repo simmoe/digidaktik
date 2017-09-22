@@ -8,7 +8,9 @@ https://vimeo.com/channels/learningp5js/138327558
 var circle = {
   x: 0,
   y: 200, 
-  diameter: 50
+  diameter: 50,
+  xSpeed: 15,
+  ySpeed: 12
 };
 
 
@@ -29,8 +31,20 @@ function draw() {
   //Fordi vi har oprettet OBJEKTET circle kan vi tilgå dets indre variable med dot-notation (circle.x) 
   ellipse(circle.x, circle.y, circle.diameter, circle.diameter);
     
-  circle.x = circle.x + 1;
-}
+  circle.x = circle.x + circle.xSpeed;
+  circle.y = circle.y + circle.ySpeed;
+    
+  //Her tjekker vi for om cirklen rammer siden af programmet og sørger for at den vender om    
+  if(circle.x > width || circle.x < 0){
+      circle.xSpeed *= -1;
+  }    
+
+  //Her tjekker vi for om cirklen rammer toppen eller bunden af programmet og sørger for at den vender om    
+  if(circle.y > height || circle.y < 0){
+      circle.ySpeed *= -1;
+  }    
+
+}   
 
 /*
 OPGAVER
