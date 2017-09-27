@@ -28,3 +28,12 @@ function draw() {
     bubbles[i].display();
   }
 }
+
+
+/*
+
+Brug funktionaliteten fra den tidligere skitse omkring funktioner til at få objekterne til at nærme sig musemarkøren
+
+Se nu om du kan finde ud af at gøre objekterne tydligere jo tættere de kommer på musen 
+
+*/

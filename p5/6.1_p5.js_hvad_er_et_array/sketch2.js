@@ -33,3 +33,13 @@ function mousePressed() {
     index = 0;
   }
 }
+
+/*
+OPGAVER 
+
+Lav et nyt array som indeholder gråtoner fra 0-255 - brug det array til at skifte fyldfarve på teksten hver gang den skrives
+
+Lav et nyt array som du fylder med objekter af typen "color". Se om du kan få teksten til at skifte mellem farver hver gang man klikker 
+
+
+*/

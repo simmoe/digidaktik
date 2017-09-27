@@ -5,7 +5,7 @@
 
 */
 
-var nums = [100, 35, 46, 72];
+var numbers = [23,7,72,56];
 var num = 23;
 
 function setup() {
@@ -13,8 +13,26 @@ function setup() {
 }
 
 function draw() {
-background(0);
-  ellipse(100, 200, num, num);
-  ellipse(200, 200, nums[2], nums[2]);
-
+  background(0);
+  ellipse(100,200, num, num);    
+  ellipse(200,200, numbers[2], numbers[2]);
 }
+
+/*
+
+Opgaver
+
+Prøv at udskifte værdierne i ellipsen med andre værdier fra arrayet numbers[]  
+
+Prøv nu at gøre arrayet meget længere - altså indsæt nogle flere tal 
+
+Prøv så at lave et for() loop, der tegner en masse cirkler og bruger værdierne fra arrayet løbende
+Se javascript referencen her: https://www.w3schools.com/js/js_loop_for.asp
+
+Man kan også lave et tomt array ved at bruge var numbers = []; Og så fylde arrayet op med for eksempel 100 forskellige tal ved at bruge et for loop og random funktionen i setup() - prøv det
+
+Prøv nu at udskrive dit array i et nyt for loop, hvor du bruger de tilfældige tal i dit array - sørg for at tegningen det danner, kommer til at fylde hele x-aksen på skærmen (brug for eksempel map funktionen)
+
+Prøv nu at lægge en lille smule til eller trække en lille smule fra størrelsen på værdierne i dit array hver gang du løber dt igennem i dit for() loop - se om du kan få tegningen til at bevæge sig
+
+*/
