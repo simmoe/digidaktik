@@ -32,8 +32,9 @@ function draw() {
 /*
 OPGAVER 
 
-1  Prøv at lave to parametre i display funktionen, som sætter  farver på cirklens  
+Prøv at lave to parametre i display funktionen, som sætter  farver på cirklen 
 
-2  prøv at kigge i de tidligere eksempler - og se om du kan implementere funktionen bounce i objektet
+Prøv at implementere en funktion mere i cirkelobjektet som gør at cirklens position bliver påvirket af musens x-position
+
 
 */
