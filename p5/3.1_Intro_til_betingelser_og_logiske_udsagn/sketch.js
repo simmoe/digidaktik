@@ -26,13 +26,29 @@ function setup() {
 function draw() {
   background(0);
   
+  //stroke bestemmer farven på den næste streg der tegnes
   stroke(255);
+  //strokeweight bestemmer hvor tyk den skal være
   strokeWeight(4);
+  //Navnet noFill() taler for sig selv - ingen baggrundsfarve til at starte med 
   noFill();
   
+  //Men HVIS mouseX er større end 300 - SÅ lav en fyldfarve
   if (mouseX > 300) {
     fill(255, 0, 200);
   }
   
   ellipse(300, 200, 100, 100);
 }
+
+/*
+
+OPGAVER 
+
+1  Prøv at få programmet til at tegne en anden baggrundsfarve hvis X er mindre end 300
+
+2  Få programmet til at skifte mellem tre forskellige farver i cirklen. Når musens X er hhv før, på og efter cirklen 
+
+3 Prøv at bruge funktionen text() til at skrive musens x-værdi ud på skærmen - kig efter den i referencen: https://p5js.org/reference/ 
+
+*/

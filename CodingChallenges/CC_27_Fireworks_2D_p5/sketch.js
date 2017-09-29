@@ -12,12 +12,12 @@ function setup() {
   gravity = createVector(0, 0.2);
   stroke(255);
   strokeWeight(4);
-  background(0);
+  background("#515151");
 }
 
 function draw() {
   colorMode(RGB);
-  background(0, 0, 0, 25);
+  background("#383838");
   
   if (random(1) < 0.03) {
     fireworks.push(new Firework());

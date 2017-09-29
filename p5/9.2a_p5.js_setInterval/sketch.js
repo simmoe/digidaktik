@@ -6,8 +6,7 @@ function setup() {
   createCanvas(200, 200);
   timer = createP('timer 1');
   timer2 = createP('timer 2');
-  
-  interval = setInterval(timeIt, 500);
+  interval = setInterval(timeIt(), 500);
 }
 
 function timeIt() {
@@ -20,7 +19,7 @@ function draw() {
   stroke(255);
   line(x, 0, x, height);
 
-  x = x + 3;
+  x = x + 1;
   if (x > width) {
     x = 0;
   }

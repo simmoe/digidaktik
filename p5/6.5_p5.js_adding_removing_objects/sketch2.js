@@ -33,6 +33,7 @@ function Bubble(x, y) {
 
   this.display = function() {
     stroke(255);
+    strokeWeight(2);
     fill(255, 0, 150, 50);
     ellipse(this.x, this.y, 24, 24);
   }
@@ -43,3 +44,13 @@ function Bubble(x, y) {
 
   }
 }
+
+/*
+OPGAVER
+
+1 . Kig koden igennem og prøv at forklar hvordan den fungerer. 
+2 . Prøv at gøre slangen kortere eller længere
+3 . Det ville være fedt, hvis slangens objekter efterhånden fadede ud. Lige nu sættes der en fast alpha værdi på fill i display() funktionen - kan den gøres dynamisk, så den sættes med en parameter der følger objektets plads i arrayet?
+
+
+*/

@@ -17,6 +17,7 @@ function Bubble(x, y) {
     var d = dist(this.x, this.y, other.x, other.y);
     if (d < this.r + other.r) {
       return true;
+      points = points +1;
     } else {
       return false;
     }
