@@ -24,7 +24,7 @@ function draw() {
   }
 }
 
-//Læg mærke til at constructor funktionen Bubble har fået to parametre: musens x og y koordinat. På den åde kan vi - når vi kalder new Bubble(x,y){} i mousePressed funktionen, sørge for at den bliver oprettet lige der hvor vi trykker. 
+//Læg mærke til at constructor funktionen Bubble har fået to parametre: musens x og y koordinat. På den måde kan vi - når vi kalder new Bubble(x,y){} i mousePressed funktionen, sørge for at den bliver oprettet lige der hvor vi trykker. 
 function Bubble(x, y) {
   this.x = x;
   this.y = y;

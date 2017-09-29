@@ -25,3 +25,9 @@ function draw() {
     }
   }
 }
+
+
+/*
+Sørg for at der bliver lavet nogle bobler engang imellem - fx hvert tiende sekund
+
+*/
