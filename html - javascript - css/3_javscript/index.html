@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CSS template</title>
+    <title>Javascript Quiz</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="javascript.js" type="text/javascript"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<h1 class="styled">QUIZ Titel</h1>
+<h1 class="styled">Titel</h1>
     
-<article id="main">
+<div id="main">
     <h2>Regler</h2>
-    <p>Svar på spørgsmålene, undgå det modbydelige jumpscare, kom frem til vindersiden.</p>           
+    <p>Svar på spørgsmålene, und   gå det modbydelige jumpscare, kom frem til vindersiden.</p>        
     <button type="submit" onclick="javascript:nextQuestion(1)">Begynd</button>
-</article>
-</body>
-</html>
+</div>
 
 <div id="question-1" class="hidden">
-<h2>Hvilket køn er Donald Trump?</h2>
-<form>
-  <input type="radio" onclick="nextQuestion(99)">Mand<br>
-  <input type="radio" onclick="nextQuestion(99)">Kvinde<br>
-  <input type="radio" onclick="nextQuestion(2)">Ingen af delene
-</form>  
+    <h2>Hvilken farve har appelsiner?</h2>
+    <form>
+        <input type="radio" onclick="nextQuestion(99)">Grønne<br>
+        <input type="radio" onclick="nextQuestion(99)">Pink<br>
+        <input type="radio" onclick="nextQuestion(2)">Ingen af delene
+    </form>  
 </div>
 
 <div id="question-2" class="hidden">
-<h2>Hvornår blev han født?</h2>
-<form>
-  <input type="radio" onclick="nextQuestion(99)">Stenalderen<br>
-  <input type="radio" onclick="nextQuestion(99)">Jernalderen<br>
-  <input type="radio" onclick="nextQuestion(3)">Sidste istid
-</form>  
+    <h2>Hvad er længst siden?</h2>
+    <form>
+        <img src="billeder/sten.png" onclick="nextQuestion(99)" />Stenalderen<br>
+        <img src="billeder/jern.png" onclick="nextQuestion(99)" />Jernalderen<br>
+        <img src="billeder/is.png" onclick="nextQuestion(3)" />Sidste istid<br>
+    </form>  
 </div>
 
 <div id="question-10" class="hidden">
-<h2>Du har vundet!!</h2>
+    <h2>Du har vundet!!</h2>
 </div>
 
 <div id="question-99" class="hidden">
-<h2>Nej!!</h2>
-<p>Her er så dit jumpscare..</p>
+    <h2>Nej!!</h2>
+    <p>Her indsætter du tabersiden..</p>
 </div>
+
+</body>
+</html>
 
 
 <!--

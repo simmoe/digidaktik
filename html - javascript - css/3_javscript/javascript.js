@@ -1,8 +1,10 @@
-var number = 1;
-
 function nextQuestion(number){
     var str = "question-" + number;
-    document.getElementById("main").innerHTML =     document.getElementById(str).innerHTML; 
+    if(document.getElementById(str)){
+        document.getElementById("main").innerHTML = document.getElementById(str).innerHTML; 
+    }else{
+        alert("Kan ikke finde et element med dette id: " + str);
+    }
 }
 
 function doTheMath(theNumber){
