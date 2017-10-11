@@ -4,22 +4,57 @@ OPGAVER
 
 I dette stylesheet er alle de elementer oplistet, som bruges i index.html filen: body, article, h1, h2, p, blockquote, cite og links (a). Du skal nu gennem en række øvelser forskønne udseende og læsbarhed af teksten. 
 
-I billedet resultat.jpg ser du hvordan du skal prøve at få siden til at se ud. Følge spørgsmålene nedenfor og se om du kan læse opgaven.
+I billedet resultat.jpg ser du hvordan du skal prøve at få siden til at se ud. Følg opgaverne nedenfor og se om du kan løse det.
 
-Runde hjørner: https://www.w3schools.com/css/css3_borders.asp
+
+Begynd med body elementet. Giv sidens body en fast bredde i procent og margin:auto, for at centrere indholdet. 
+
+Skift nu skrifttype på alt indhold ved at sætte font-family 
+
+Sæt en baggrundsfarve på sidens body: background-color
+
+Prøv at sætte en anden baggrundsfarve på article
+
+Indsæt evt også en anden padding på article, så teksten ikke står og klæber op af siderne 
+
+Nu skal du sætte et baggrundsbillede på body elementet, brug background-image (der ligger allerede et billede i mappen - anim.gif, men du kan også vælge et selv):
+https://www.w3schools.com/cssref/pr_background-image.asp
+
+Men nu er det irriterende - billedet gentages automatisk på hele siden. Brug background-repeat til at justere..
+
+Og brug så margin-top til at få artiklen lidt længere ned..
+
+Og brug evt background-position til at justere billedets placering
+https://www.w3schools.com/cssref/pr_background-position.asp
+
+Kig nu på selve tekstafsnittene i article. 
+
+Brug font-size til at justere i H1, H2 og P osv. Til du selv synes det ser godt ud!
+https://www.w3schools.com/css/css_font.asp
+
+
+Lav evt runde hjørner på article: https://www.w3schools.com/css/css3_borders.asp
 
 I den første linje @import.. ser du hvordan en skrifttype importeres direkte til en hjemmeside. Den kan nu bruges i stylesheetet til at sætte font-family: Raleway
+
+Se flere skrifttyper på https://fonts.google.com/ Prøv at find dine egne skrifttyper og sæt dem ind på siden
 
 */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
 
 body{
-
+    font-family:Raleway;
+    width:80%;
+    margin:auto;
+    background-image:url(anim.gif);
+    background-repeat: repeat-x;
+    margin-top:200px;
 }
 
 article{
-
+    background-color: white;
 }
 
 h1{
