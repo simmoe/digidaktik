@@ -11,26 +11,30 @@
 <h1 class="styled">Titel</h1>
     
 <div id="main">
+    <button type="submit" onclick="javascript:nextQ(0)">start quiz</button>    
+</div>
+
+<div id="question-0" class="hidden">
     <h2>Regler</h2>
-    <p>Svar på spørgsmålene, und   gå det modbydelige jumpscare, kom frem til vindersiden.</p>        
-    <button type="submit" onclick="javascript:nextQuestion(1)">Begynd</button>
+    <p>Svar på spørgsmålene, undgå tabersiden, kom frem til vindersiden.</p>        
+    <button type="submit" onclick="javascript:nextQ(1)">Begynd</button>
 </div>
 
 <div id="question-1" class="hidden">
     <h2>Hvilken farve har appelsiner?</h2>
     <form>
-        <input type="radio" onclick="nextQuestion(99)">Grønne<br>
-        <input type="radio" onclick="nextQuestion(99)">Pink<br>
-        <input type="radio" onclick="nextQuestion(2)">Ingen af delene
+        <input type="radio" onclick="nextQ(99)">Grønne<br>
+        <input type="radio" onclick="nextQ(99)">Pink<br>
+        <input type="radio" onclick="nextQ(2)">Ingen af delene
     </form>  
 </div>
 
 <div id="question-2" class="hidden">
     <h2>Hvad er længst siden?</h2>
     <form>
-        <img src="billeder/sten.png" onclick="nextQuestion(99)" />Stenalderen<br>
-        <img src="billeder/jern.png" onclick="nextQuestion(99)" />Jernalderen<br>
-        <img src="billeder/is.png" onclick="nextQuestion(3)" />Sidste istid<br>
+        <img src="billeder/sten.png" onclick="nextQ(99)" />Stenalderen<br>
+        <img src="billeder/jern.png" onclick="nextQ(99)" />Jernalderen<br>
+        <img src="billeder/is.png" onclick="nextQ(3)" />Sidste istid<br>
     </form>  
 </div>
 
@@ -40,7 +44,8 @@
 
 <div id="question-99" class="hidden">
     <h2>Nej!!</h2>
-    <p>Her indsætter du tabersiden..</p>
+    <p>Her indsætter du tabersidens indhold..</p>
+    <button type="submit" onclick="javascript:nextQ(0)">Begynd forfra</button>
 </div>
 
 </body>
@@ -50,18 +55,27 @@
 <!--
 OPGAVER
 
-Du skal nu lave quizzen om så den passer på dit personlige tema - start med forsiden og giv siden en visuel identitet 
+Du skal lave en quiz med ti spørgsmål med et tema efter eget valg. 
+
+Indsæt din egen indledning og lav det første spørgsmål om så det passer til dit tema 
+
+Billederne på spørgsmål to er håbløse i størrelsen - brug stylesheetet til at tilpasse dem
 
 Spørgsmål to virker kun hvis man svarer forkert. Find fejlen og lav spørgsmål tre 
 
 Spørgsmål tre skal ikke have radiobuttons som valgmulighed - i stedet skal det være en dropdown menu. Læs hvordan her: https://www.w3schools.com/TAGs/tag_select.asp
 
-Avanceret: style din dropdown menu så den folder ud on hover: https://www.w3schools.com/css/css_dropdowns.asp
-
 Spørgsgmål fire skal bruge knapper i stedet: https://www.w3schools.com/TAgs/tag_button.asp
 
 Spørgsmål 5 skal være et regnestykke. Altså du beder brugeren om at regne et eller andet ud og svaret bliver så kalkuleret i javascript. Der findes faktisk allerede en metode der sørger for at evaluere et nummer - brug følgende input metode i spørgsmålet: 
     <input id="theNumber" type="number"/>
-    <button onclick="javascript:nextQuestion(doTheMath(document.getElementById('theNumber').value))">Prøv</button>
+    <button onclick="javascript:nextQ(doTheMath(document.getElementById('theNumber').value))">Prøv</button>
+
+
+Nu skal du arbejde med det visuelle på din quiz. 
+  Sørg for at der er et eller flere baggrundsbilleder
+  Prøv at arbejde med tekstplaceringer og skrifttyper, så quizzen bliver pænere 
+
+Avanceret: style din dropdown menu så den folder ud on hover: https://www.w3schools.com/css/css_dropdowns.asp
 
 -->
