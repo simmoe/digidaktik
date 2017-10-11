@@ -1,0 +1,56 @@
+/*
+
+OPGAVER 
+
+I dette stylesheet er alle de elementer oplistet, som bruges i index.html filen: body, article, h1, h2, p, blockquote, cite og links (a). Du skal nu gennem en række øvelser forskønne udseende og læsbarhed af teksten. 
+
+I billedet resultat.jpg ser du hvordan du skal prøve at få siden til at se ud. Følge spørgsmålene nedenfor og se om du kan læse opgaven.
+
+Runde hjørner: https://www.w3schools.com/css/css3_borders.asp
+
+I den første linje @import.. ser du hvordan en skrifttype importeres direkte til en hjemmeside. Den kan nu bruges i stylesheetet til at sætte font-family: Raleway
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{
+
+}
+
+article{
+
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+p{
+    
+}
+
+blockquote{
+    
+}
+
+cite{
+    
+}
+
+a{
+
+}
+
+a:visited{
+    
+}
+
+a:hover{
+
+}
+
