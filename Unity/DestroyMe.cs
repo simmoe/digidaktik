@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroySphere : MonoBehaviour {
+public class DestroyMe : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other){
 		if (other.gameObject.CompareTag ("projectile")) {
