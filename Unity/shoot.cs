@@ -9,7 +9,7 @@ public class shoot : MonoBehaviour
 	{
 
 		//if some key is pressed, the "fire" function is called
-		if (Input.GetKeyDown("j"))
+		if (Input.GetKeyDown("p"))
 		{
 			Fire();
 		}
@@ -28,6 +28,8 @@ public class shoot : MonoBehaviour
 		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
 
 		// Destroy the bullet after 2 seconds
-		Destroy(bullet, 2.0f);        
+		//Destroy(bullet, 2.0f);        
 	}
 }
+
+//Øvelser
