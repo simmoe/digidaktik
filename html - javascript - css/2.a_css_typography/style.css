@@ -45,16 +45,9 @@ Se flere skrifttyper på https://fonts.google.com/ Prøv at find dine egne skrif
 @import url('https://fonts.googleapis.com/css?family=Bitter');
 
 body{
-    font-family:Raleway;
-    width:80%;
-    margin:auto;
-    background-image:url(anim.gif);
-    background-repeat: repeat-x;
-    margin-top:200px;
 }
 
 article{
-    background-color: white;
 }
 
 h1{
