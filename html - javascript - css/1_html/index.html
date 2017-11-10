@@ -5,25 +5,35 @@
 </head>
 <body>
 
-<h1>Dette er HTML</h1>
-    
 <div>
-  <h2>1991</h2>
-    <p>Den grundlæggende tanke bag Hypertext var denne ide: tænk hvis man læste i en bog og stødte på et eller andet som fangede ens interesse, men som bogen ikke beskrev. Tænk hvis man nu kunne springe direkte ind i en helt anden bog, som handlede om lige netop det?</p>
-    <p>Den simple idé blev Hypertekst - eller "linket" tekst, som er grundlaget for Internettet som vi kender det i dag. Tænk på Twitter - det er en linksamling.</p>
-    <p><a href="2.html">Her er et link til side to.</a> For at skabe et link indrammer man teksten med et "a" tag.</p>
-</div>    
+<h1>Dette er HTML</h1>
+<p>Hypertext Markup Language er en simpel måde at formattere tekst på, så den er opdelt efter typografiske standarder: verskrifter, afsnit, citater osv osv.</p>    
+<h2>Hypertext</h2>
+<p>Den grundlæggende tanke bag Hypertext var denne: tænk hvis man læste i en bog og stødte på et eller andet som fangede ens interesse, men som bogen ikke beskrev. Tænk hvis man nu kunne springe direkte ind i en helt anden bog, som handlede om lige netop det?</p>
 
+<p>Den udfordring løser Hypertekst - eller "linket" tekst, som er grundlaget for Internettet som vi kender det i dag. </p>
+
+<p><a href="2.html">Her er et link til side to.</a> For at skabe et link indrammer man teksten med et "a" tag.</p>
+</div>
+    
 <hr/>
     
 <div>
-  <h2>Lyd</h2>
-    <p>For at indsætte lydelementer bruger man tagget audio. Inden i audio elementet skal der være et "source" element, som peger på den fil der skal afspilles. Fordi forskellige browsere understøtter forskellige lydformater, skal der helst være et link til både en .ogg og en .mp3 fil.</p>
-  <audio controls>
+<h2>Udbredelse</h2>
+<p>Internettet har vundet nærmest ufattelig udbredelse på hele kloden i de 25 år det har eksisteret. I dag har godt 50% af alle mennesker direkte adgang til nette gennem egen telefon eller computer. Selvom teknologien er fantastisk, indeholder et så udbredt informationsnetværk også sine store problemer:</p>
+<p>I can't in good conscience allow the U.S. government to destroy privacy, internet freedom and basic liberties for people around the world with this massive surveillance machine they're secretly building.
+Edward Snowden 
+Read more at:https://www.brainyquote.com/quotes/quotes/e/edwardsnow523849.html</p>
+</div>
+    
+<div>
+<h2>Lyd</h2>
+<p>For at indsætte lydelementer bruger man tagget audio. Inden i audio elementet skal der være et "source" element, som peger på den fil der skal afspilles. Fordi forskellige browsere understøtter forskellige lydformater, skal der helst være et link til både en .ogg og en .mp3 fil.</p>
+<audio controls>
     <source src="horse.ogg" type="audio/ogg">
     <source src="horse.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-  </audio>
+</audio>
 </div>
 
 <footer>
@@ -40,24 +50,37 @@ OPGAVER
 Prøv at indsætte et title tag for at give siden et navn. Hvad sker der i browseren?
 https://www.w3schools.com/tags/tag_title.asp 
 
-Indsæt et billede på siden (der ligger et i mappen, men du kan også finde et selv og gemme det i mappen før du indsætter det)
+I afsnittet "Udbredelse" er der et citat af Edward Snowden. Prøv at bruge markup til at formattere det korrekt:
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_blockquote
+
+Hvis noget skal være et afsnit (afstand mellem linjerne til næste afsnit), skal det indrammes med et <p></p> tag. Hvis man bare skal have et linjeskift bruger man tagget <br> efter sætningen. Brug <br> eller <p> til at få Snowdens navn placeret efter citatet. 
+
+<hr> -tags indsætter en vandret linje i tekste. Brug tagget til at adskille afsnittene om "Udbredelse" og "Lyd".
+
+Lav et afsnit der handler om billeder (ligesom afsnittet om lyd). Indsæt et billede på siden (der ligger et i mappen, men du kan også finde et selv og gemme det i mappen før du indsætter det)
 https://www.w3schools.com/html/html_images.asp
 
-Indsæt en video på siden (der ligger allerede to videoer i mappen)
+Lav også et afsnit om video. Indsæt en video på siden (der ligger allerede to videoer i mappen)
 https://www.w3schools.com/html/html5_video.asp
+
+For at indsætte en video fra youtube skal man bruge funktionen del/embed på youtube.com. Find en video, kopier koden og indsæt den på din egen side. 
 
 Indsæt et link på side to, der viser tilbage til den første side
 https://www.w3schools.com/TagS/tag_a.asp 
 
-Opret en side mere - kald den 3.html. Opret links så man kan komme rundt mellem siderne 
+Indsæt teksten fra dit brev til den nedfrosne onkel på side to. Formattér teksten, så den er opdelt i overskrifter og afsnit. 
 
-Prøv at indsætte et link til en side på internettet
+Opret en side mere - kald den 3.html. Opret links så man kan komme rundt mellem alle tre sider.
 
-Iframes er noget man bruger til at indsætte en html side - i en anden html side. Lyder det komplekst? Prøv selv..
+Lav et afsnit om links. Vis hvordan man indsætter links til en helt anden side på internettet. https://www.w3schools.com/html/html_links.asp
+
+Iframes er noget man bruger til at indsætte en hel html side - i en anden html side. Lyder det komplekst? Prøv selv..
 Indsæt en iframe: https://www.w3schools.com/html/html_iframe.asp
 
 
 HTML er en fuldkommen usorteret mængde information, og som sådan temmelig vasnkeligt at indeksere og holde styr på. Prøv at indsætte noget meta-data for at gøre siden relevant:
 https://www.w3schools.com/Tags/tag_meta.asp
+
+
 
 -->
