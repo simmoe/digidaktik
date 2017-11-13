@@ -1,5 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+body{
+
+}
+
+#main{
+
+}
+
+.factbox{
+
+}
+
+article{
+    
+}
+
+h1, h2, h3{
+    
+}
+
+p{
+    
+}
+
+img{
+
+}
+
+footer{
+    
+}
+
+
 /*.styled betyder, at reglerne skal gælde for alle elementer med klassen "styled"*/
 .styled {
     font-family: Raleway;
@@ -20,25 +53,4 @@
     background-color: black;
     color:white; 
     background-size: 40px 40px;
-}
-
-body{
-}
-
-artcle{
-    
-}
-
-h1, h2, h3{
-    
-}
-
-p{
-    
-}
-
-img{
-}
-
-footer{
 }
