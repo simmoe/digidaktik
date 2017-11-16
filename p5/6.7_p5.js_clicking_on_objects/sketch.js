@@ -4,13 +4,23 @@ Code for video https://vimeo.com/channels/learningp5js/141919520
 */
 
 var bubbles = [];
-var texter = 0;
+var counter = 0;
+var go = false;
 
 function setup() {
   createCanvas(600, 400);
   makeBubbles();
+  setTimeout(count, 2000);
 }
 
+function count(){
+    counter++;
+    setTimeout(gameOver, 1000);
+}
+
+function gameOver(){
+    go = true;
+}
 function mousePressed() {
   for (var i = 0; i < bubbles.length; i++) {
        bubbles[i].clicked();
@@ -22,6 +32,13 @@ function draw() {
   for (var i = 0; i < bubbles.length; i++) {
     bubbles[i].move();
     bubbles[i].display();
+  }
+  textSize(40);
+  text(counter, 40,40);
+  if(go){
+    textSize(40);
+    text("Game Over", 40,40);
+      
   }
 }
 
