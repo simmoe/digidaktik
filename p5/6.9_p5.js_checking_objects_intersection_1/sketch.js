@@ -36,5 +36,7 @@ OPGAVER
 
 1  Prøv at indsætte en tredje bubble i programmet
 2  Kan i lave en tæller som giver "point" hver gang boblerne rammer hinanden?
+3  Kan i sørge for at bobler forsvinder når de rører hinanden - og i stedet dukker op et nyt sted?
+4  Kan i ved hjælp af musen skabe noget interaktion der gør skitsen til et lille spil-agtigt?
 
 */
