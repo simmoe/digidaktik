@@ -7,24 +7,32 @@ I dette stylesheet er alle de elementer oplistet, som bruges i index.html filen:
 I billedet resultat.jpg ser du hvordan du skal prøve at få siden til at se ud. Følg opgaverne nedenfor og se om du kan løse det.
 
 
-Begynd med body elementet. Giv sidens body en fast bredde i procent og margin:auto, for at centrere indholdet. 
+Begynd med body elementet. Giv sidens body en fast bredde i procent og margin:auto, for at centrere indholdet.
+https://www.w3schools.com/cssref/pr_dim_width.asp
+https://www.w3schools.com/css/css_margin.asp
 
-Skift nu skrifttype på alt indhold ved at sætte font-family 
 
-Sæt en baggrundsfarve på sidens body: background-color
+Skift nu skrifttype på alt indhold:
+https://www.w3schools.com/cssref/pr_font_font-family.asp
 
-Prøv at sætte en anden baggrundsfarve på article
+Sæt den rigtige baggrundsfarve på siden:
+https://www.w3schools.com/cssref/pr_background-color.asp
+Brug fx https://color.adobe.com/ til at finde farven fra billedet
 
-Indsæt evt også en anden padding på article, så teksten ikke står og klæber op af siderne 
+Sæt hvid baggrundsfarve på article elementer
 
-Nu skal du sætte et baggrundsbillede på body elementet, brug background-image (der ligger allerede et billede i mappen - anim.gif, men du kan også vælge et selv):
+Sørg for at teksten ikke står og klæber op af siderne på article elementet
+https://www.w3schools.com/css/css_padding.asp
+
+Sæt et baggrundsbillede på body elementet, brug background-image (der ligger allerede et billede i mappen - anim.gif:
 https://www.w3schools.com/cssref/pr_background-image.asp
 
 Men nu er det irriterende - billedet gentages automatisk på hele siden. Brug background-repeat til at justere..
 
-Og brug så margin-top til at få artiklen lidt længere ned..
+Og brug så margin til at få artiklen lidt længere ned..
+https://www.w3schools.com/css/css_margin.asp
 
-Og brug evt background-position til at justere billedets placering
+Brug background-position til at justere billedets placering
 https://www.w3schools.com/cssref/pr_background-position.asp
 
 Kig nu på selve tekstafsnittene i article. 
@@ -32,8 +40,7 @@ Kig nu på selve tekstafsnittene i article.
 Brug font-size til at justere i H1, H2 og P osv. Til du selv synes det ser godt ud!
 https://www.w3schools.com/css/css_font.asp
 
-
-Lav evt runde hjørner på article: https://www.w3schools.com/css/css3_borders.asp
+Lav runde hjørner på article: https://www.w3schools.com/css/css3_borders.asp
 
 I den første linje @import.. ser du hvordan en skrifttype importeres direkte til en hjemmeside. Den kan nu bruges i stylesheetet til at sætte font-family: Raleway
 
