@@ -3,7 +3,7 @@ shopt -s globstar
 
 # Tjek https://github.com/processing/p5.js/releases/latest for at se den
 # nyeste version og giv den som argument
-wget https://github.com/processing/p5.js/releases/download/$1/p5.zip
+curl -OL https://github.com/processing/p5.js/releases/download/$1/p5.zip
 if [[ $? -eq 0 ]]; then
     unzip p5.zip -d libs
     for f in **/**/libraries; do
