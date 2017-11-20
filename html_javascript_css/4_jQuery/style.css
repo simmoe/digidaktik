@@ -1,0 +1,18 @@
+.hidden{ 
+    display: none;
+    border: 1px solid gray;
+}
+
+.hidden_complete{
+    visibility: hidden;
+}
+
+#panel {
+    padding:20px;
+    background-color: aqua;
+    display:none;
+}
+
+
+
+

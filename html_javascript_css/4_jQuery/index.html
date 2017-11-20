@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  <body>
+      <header>
+          <h1 id = "title">jQuery</h1>
+      </header>
+      <div id="main">
+        <hr>
+        
+        <div>
+            <button id="klik">Klik her</button>
+            <button id="skift">Skift farve</button>
+            <button id="tekst">Hemmelighed</button>
+            <button id="foot">Panel</button>            
+            <button id="margin">Margin</button>            
+            <button id="inp">Input</button>            
+            <button id="udefra">Udefra</button>            
+            <button id="flick">Flicker</button>            
+        </div>
+
+        <hr/>
+
+        <div id="panel">
+            <p>Jeg dukker kun op hvis jeg bliver bedt om det</p>
+        </div>                  
+          
+        <p>I de her opgaver lærer du at lave interaktion og visuelle effekter med jQuery.</p>
+        
+        <p>Javascript blev opfundet i 90'erne samtidig med de første Internet sider, og blev efterhånden det primære kodesprog på al front-end webudvikling.</p>
+        
+        <p>jQery er et bibliotek som ligger oven på Javascript (ligesom fx p5.js), og som gør det supernemt at lave interaktiv funktionalitet på tværs af nettet.</p>
+
+        <h1 onclick=$(this).fadeToggle(3000);>Klik her</h1>
+        
+        <p class="hidden">I det følgende har de forskellige afsnit klasser og id'er, som gør det muligt at interagere selvstændigt med dem. Åbn scriptet script.js og løs opgaverne.</p>
+        
+        <form>
+            <input id="email" type="email" value="Skriv noget"> <select id="select">
+                <option value="volvo">Vælg noget...</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select> 
+        </form>
+          
+        <p class="hidden_complete" id="secret">Det der står her må ingen se</p>
+          
+        <p id="external">Her skal der stå noget tekst fra en ekstern fil</p>
+          
+    </div>
+      
+    <script src="script.js"></script>  
+  </body>
+</html>

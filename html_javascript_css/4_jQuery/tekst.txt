@@ -1,0 +1,1 @@
+Her er en tekst. Den står et andet sted end i html dokumentet - den ligger nemlig lige her i mappen. Men den kunne også have ligget et helt andet sted. Kan du få den ind i htm dokumentet vha jQuery?
