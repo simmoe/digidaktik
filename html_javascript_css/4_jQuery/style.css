@@ -1,6 +1,6 @@
 .hidden{ 
     display: none;
-    border: 1px solid gray;
+    padding:20px;
 }
 
 .hidden_complete{
@@ -13,6 +13,9 @@
     display:none;
 }
 
-
-
+textarea{
+    width:40%;
+    height:100px;
+    border: 2px solid gray;
+}
 

@@ -17,14 +17,11 @@
         <hr>
         
         <div>
-            <button id="klik">Klik her</button>
-            <button id="skift">Skift farve</button>
-            <button id="tekst">Hemmelighed</button>
-            <button id="foot">Panel</button>            
-            <button id="margin">Margin</button>            
-            <button id="inp">Input</button>            
-            <button id="udefra">Udefra</button>            
-            <button id="flick">Flicker</button>            
+            <button id="knap1">Vis skjult</button>
+            <button id="knap2">Skjul siden</button>
+            <button id="knap3">Skift farve</button>
+       
+       
         </div>
 
         <hr/>
@@ -39,7 +36,7 @@
         
         <p>jQery er et bibliotek som ligger oven på Javascript (ligesom fx p5.js), og som gør det supernemt at lave interaktiv funktionalitet på tværs af nettet.</p>
 
-        <h1 onclick=$(this).fadeToggle(3000);>Klik her</h1>
+        <h1>Klik her</h1>
         
         <p class="hidden">I det følgende har de forskellige afsnit klasser og id'er, som gør det muligt at interagere selvstændigt med dem. Åbn scriptet script.js og løs opgaverne.</p>
         
@@ -49,10 +46,18 @@
                 <option value="saab">Saab</option>
                 <option value="mercedes">Mercedes</option>
                 <option value="audi">Audi</option>
-            </select> 
+            </select>
+            <hr>
+            <textarea id="brugerinput">
+                Noget tekst...
+            </textarea>
+            <br/>
+            <input type="button" id="opret" value="Opret område">
         </form>
           
         <p class="hidden_complete" id="secret">Det der står her må ingen se</p>
+
+        <p id="brugertekst">Her skal der stå teksten fra ovenstående textarea</p>
           
         <p id="external">Her skal der stå noget tekst fra en ekstern fil</p>
           
