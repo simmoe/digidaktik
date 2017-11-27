@@ -1,0 +1,16 @@
+header{
+    background-color: black;
+    color:white;
+}
+
+body{
+    height: 800px;
+    background-image: url("trumpet.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 400px 300px;
+}
+
+.hidden{
+    opacity: 0;
+}

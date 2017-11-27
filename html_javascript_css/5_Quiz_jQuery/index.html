@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>QUIZ med jQuery</title>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  <body>
+      <header>
+          <h1 id = "title">Quiz</h1>
+          <p id="counter"></p>
+      </header>        
+
+        <div id="content">
+            <p>I denne quiz skal du testes på din viden om [...] Donald Trump. </p>
+            <button id="start">Start</button>
+        </div>                  
+
+
+<div class="hidden">
+<div id="qs1">
+    <h1 id="titel">Spørgsmål nummer 1</h1>
+    <h2>Hvornår blev Donald født?</h2>
+    <p>Her er etekst</p>
+    <select id="selector">
+        <option value="true">1946</option>
+        <option value="false">2045</option>
+        <option value="false">1815</option>
+    </select>
+</div>
+
+<div id="qs2">
+    <h1>Spørgsmål nummer 2</h1>
+    <h2>Hvilket køn er han egentlig?</h2>
+    <form id="radios">
+    <input type="radio" name="gender" value="false" checked> Male<br>
+    <input type="radio" name="gender" value="false"> Female<br>
+    <input type="radio" name="gender" value="true"> Other  
+    </form>
+    
+</div>
+
+<div id="lose">
+    <img src="lose.gif">
+    <p>Her er en tekst. Den bliver vist når man har tabt.</p>
+</div>      
+</div>      
+      
+    <script src="script.js"></script>  
+  </body>
+</html>
