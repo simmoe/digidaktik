@@ -1,16 +1,50 @@
-header{
-    background-color: black;
-    color:white;
-}
+@import url(http://fonts.googleapis.com/css?family=Rokkitt);
+
 
 body{
-    height: 800px;
-    background-image: url("trumpet.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 400px 300px;
+    
 }
 
-.hidden{
-    opacity: 0;
+h1 {
+
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+
+}
+
+input[type=radio] {
+
+}
+
+p {
+
+}
+
+#quizContainer {
+
+}
+
+#nextButton {
+
+}
+
+#question {
+
+}
+
+#quizMessage {
+
+}
+
+#choiceList {
+
+}
+
+#result {
+
 }
