@@ -27,13 +27,14 @@ https://www.w3schools.com/css/css_padding.asp
 Sæt et baggrundsbillede på body elementet, brug background-image (der ligger allerede et billede i mappen - anim.gif:
 https://www.w3schools.com/cssref/pr_background-image.asp
 
-Men nu er det irriterende - billedet gentages automatisk på hele siden. Brug background-repeat til at justere..
-
-Og brug så margin til at få artiklen lidt længere ned..
-https://www.w3schools.com/css/css_margin.asp
+Men nu er det irriterende - billedet gentages automatisk på hele siden. Brug background-repeat og andre background-properties til at justere..
+https://www.w3schools.com/cssref/css3_pr_background.asp
 
 Brug background-position til at justere billedets placering
 https://www.w3schools.com/cssref/pr_background-position.asp
+
+Og brug så margin til at få artiklen lidt længere ned..
+https://www.w3schools.com/css/css_margin.asp
 
 Kig nu på selve tekstafsnittene i article. 
 
