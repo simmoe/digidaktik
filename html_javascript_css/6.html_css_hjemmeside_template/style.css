@@ -1,0 +1,76 @@
+/*Her ser du sidens stylesheet. Udfyld elementerne for at angive udseende.*/
+
+/*Herunder importeres skrifttypen Raleway. Du kan finde andre skrifttyper på https://fonts.googleapis.com*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*Her vælges hele sidens body-element*/
+body{
+}
+
+/*Her vælges kun headeren. Det er sidens top (eller menu) og den må gerne se anderledes ud end resten af siden*/
+header{
+    
+}
+/*Her vælges kun article-elementet*/
+article{
+}
+
+/*Og så videre..*/
+h1{
+
+}
+
+h2{
+
+}
+
+p{
+    
+}
+
+/*Brug blockquote i HTML hvis du vil lave et længere citat*/
+blockquote{
+    
+}
+
+/*Brug <img> til at formatere billeder*/
+img{
+    
+}
+
+video{
+    
+}
+
+a{
+
+}
+
+/*Ved at bruge hastag får man fat i html elementer med et id - se om du kan finde elementet med id="menu_1" i html siderne.*/
+#menu_aktiv{
+    color:red;
+}
+
+/*Hvad er visited mon? Se https://www.w3schools.com/cssref/sel_visited.asp*/
+a:visited{
+    
+}
+
+/*Og hvad med hover?*/
+a:hover{
+
+}
+
+/*Footeren er sidens bund - og den må også gerne se anderledes ud end resten af siden. Ofte vælger man at vise footeren hele tiden - læs om "fixed" position her: https://www.w3schools.com/cssref/pr_class_position.asp*/
+footer{
+    
+}
+
+/*HTML klasser vælges ved at bruge et puktum foran navnet. Herunder laver man altså udseende på alt sdom har class="code" i html dokumentet.*/ 
+.code{
+    background-color:gray;
+    color:white;
+    border-radius: 12px;
+    border: 2px solid lightgray;
+    padding:20px;
+}
