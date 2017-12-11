@@ -24,3 +24,10 @@ namespace Damage{
 		}
 	}
 }
+
+/*Opgaver
+* Du er ude på at give spilleren nogle flere sekunder at leve i, når han rammer dette objekt. 
+*  Tag udgangspunkt i scriptet HitMe.cs og se om du kan få det til 
+*  Sørg for at objektet slettes når det er ramt 
+*  Færdig? Sørg for at der afspilles en lyd når objektet rammes
+*/

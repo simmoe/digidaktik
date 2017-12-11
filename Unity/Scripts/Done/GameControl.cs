@@ -9,7 +9,7 @@ namespace DigitaleVirkeligheder {
 		public Text point;
 		public Text scene;
 		public Text time;
-		public int Tid = 10;
+		private int Tid = 10;
 
 		private int score;
 
@@ -34,7 +34,13 @@ namespace DigitaleVirkeligheder {
 				scene.enabled = true;
 			}
 		}
-			
+
+		//Sætter en ny score, hvis score er større end [..] starter bane 2, hvis score er større end [..] har man vundet 
+		public void AddHealth (int howMuch){
+			print ("Giving health: " + howMuch);
+			Tid += howMuch;
+		}
+
 		void UpdateScore (){
 			point.text = "Score: " + score.ToString();
 		}
@@ -59,9 +65,6 @@ namespace DigitaleVirkeligheder {
 				time.text = Tid.ToString() + " Sek";
 				yield return new WaitForSeconds (1);
 				Tid--;
-				if (Tid < 0) {
-					Lose ();
-				}
 			}
 		}
 	}
