@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace GUI {
+namespace DigitaleVirkeligheder {
 public class GameControl : MonoBehaviour {
 	private int score;
 

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+namespace DigitaleVirkeligheder {
 public class Shoot : MonoBehaviour
 {
 
@@ -35,6 +36,7 @@ public class Shoot : MonoBehaviour
 		// Add velocity to the bullet
 		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 10.0f;
 	}
+}
 }
 
 /**

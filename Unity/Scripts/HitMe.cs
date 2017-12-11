@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Target {
+namespace DigitaleVirkeligheder {
 	public class HitMe : MonoBehaviour {
 
 	public GameObject explosionprefab;

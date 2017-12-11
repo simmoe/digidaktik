@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Damage {
+namespace DigitaleVirkeligheder {
 	public class HitMe : MonoBehaviour {
 
 		public GameObject explosionprefab;

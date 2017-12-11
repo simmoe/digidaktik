@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-namespace Damage {
+namespace DigitaleVirkeligheder {
 	public class GameControl : MonoBehaviour {
 		public Text point;
 		public Text scene;

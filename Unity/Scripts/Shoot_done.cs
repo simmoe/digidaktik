@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Damage {
+namespace DigitaleVirkeligheder {
 public class Shoot : MonoBehaviour
 {
 	public GameObject bulletPrefab;
