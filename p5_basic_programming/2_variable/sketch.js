@@ -22,7 +22,7 @@ function draw() {
 
   //Koden nedenfor er bare til for at vise hvad variablen er sat til    
   fill(255);
-  textSize(25);    
+  textSize(12);    
   text("circleX: " + circleX, 20, 360, 200, 200);
 }
 
@@ -31,9 +31,15 @@ Opgaver
 
 Prøv først at sætte variablen circleX til noget andet - fx 80, og tryk gem (ctrl-s || cmd-s). Nu flytter cirklen sig - selvfølgelig - fordi variablen jo definerer dens x-værdi. 
 
+Prøv at lav en ny variabel - circleY - og brug den til at sætte cirklens y-værdi.
+
+Se om du kan skrive en tekst med circleY på skærmen - på samme måde som circleX skrives.
+
 Lad os prøve at få cirklen til at bevæge sig hen over skærmen. Husk på at metoden draw() udføres 60. gange hvert sekund. Prøv at plusse variablen circleX med 1 hver gang..
 
-Nu ser det lidt mærkeligt ud. Cirklen bliver ved med at blive tegnet, og teksten skriver tallene oven i hinanden. Kald metoden background() med en eller anden baggrundsfarve lige før du tegner med fill() og ellipse(); Se https://p5js.org/reference/#/p5/background
+Nu ser det lidt mærkeligt ud. Cirklen bliver ved med at blive tegnet, og teksten skriver tallene oven i hinanden. 
+
+Kald metoden background() med en eller anden baggrundsfarve lige før du tegner med fill() og ellipse(); Se https://p5js.org/reference/#/p5/background
 
 Ok?
 
@@ -49,7 +55,7 @@ Nu skal du så fortælle maskinen hvilken logik den skal bruge: hvis circleX er 
 
 Du kan se hvordan man laver et if() {} else(){} statement her: https://www.w3schools.com/js/js_if_else.asp. 
 
-Hvis du kan det vil du se, at cirklen nu vender pænt når den rammer højre side - men ikke venstre. 
+Hvis du kan det, vil du se, at cirklen nu vender pænt når den rammer højre side - men ikke venstre. 
 
 Kan du lave et nyt if() statement som vender speed til plus igen, når circleX er mindre end 0?
 
@@ -59,7 +65,7 @@ Lidt sværere opgaver
 
 Lige nu bruges funktionen fill() til at sætte cirklens farve til noget grønt. Kan du oprette en variabel - fx green - som styrer cirklens farve vha variablen circleX?
 
-Musens x-position hedder altd mouseX i dette program. Se om du kan bruge mouseX til at styre speed;
+Musens x-position hedder altid mouseX i dette program. Se om du kan bruge mouseX til at styre speed?
 
 - - - - 
 
