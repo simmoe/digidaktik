@@ -1,7 +1,6 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/cXgA1d_E-jY&
+/* Udviklet af Daniel Shiffman - http://patreon.com/codingtrain
+Videre modificeret og udviklet til gymnasiebrug af Simon Moe 
+*/
 
 function Bird() {
   this.y = height/2;

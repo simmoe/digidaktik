@@ -1,7 +1,5 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/cXgA1d_E-jY&
+/* Daniel Shiffman http://codingtra.in http://patreon.com/codingtrain Code for: https://youtu.be/cXgA1d_E-jY&.
+Modificeret til gymnasiebrug af Simon Moe*/
 
 
 var bird;
@@ -13,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+   background(0);
 
   for (var i = pipes.length-1; i >= 0; i--) {
     pipes[i].show();
@@ -34,7 +32,7 @@ function draw() {
   bird.update();
   bird.show();
 
-  if (frameCount % 100 == 0) {
+  if (frameCount % 100  == 0) {
     pipes.push(new Pipe());
   }
 
@@ -45,6 +43,5 @@ function draw() {
 function keyPressed() {
   if (key == ' ') {
     bird.up();
-    //console.log("SPACE");
   }
 }

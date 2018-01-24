@@ -1,14 +1,12 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/cXgA1d_E-jY&
+/* Daniel Shiffman http://codingtra.in http://patreon.com/codingtrain Code for: https://youtu.be/cXgA1d_E-jY&.
+Modificeret til gymnasiebrug af Simon Moe*/
 
 function Pipe() {
   this.top = random(height/2);
   this.bottom = random(height/2);
   this.x = width;
   this.w = 20;
-  this.speed = 2;
+  this.speed = 1     ;
 
   this.highlight = false;
 
