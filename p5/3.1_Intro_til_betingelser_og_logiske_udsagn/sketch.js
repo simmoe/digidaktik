@@ -34,6 +34,7 @@ function draw() {
   noFill();
     
   ellipse(300, 200, 100, 100);
+    
 }
 
 /*
@@ -45,13 +46,33 @@ Koordinatet for musens markør hedder altid: mouseX, mouseY.
 
 Et if(){} statement er opbygget som et spørgsmål og et svar. 
 
+Lad os prøve at ændre baggrundsfarven også. 
+
 OPGAVER - SELVSTÆNDIGT
 
-Prøv at få programmet til at tegne en anden baggrundsfarve på cirklen hvis X er mindre end 300
+
+Prøv at få programmet til at tegne en anden baggrundsfarve (udskift noFill() med fill(r,g,b)) på cirklen hvis X er mindre end 300..
 
 Få så programmet til at skifte mellem tre forskellige farver i cirklen. Når musens X er hhv før, på og efter cirklen
 
-frameCount er en variabel som indeholder det antal frames der er gået siden programmet startede. Der ere tres frames i sekundet. Kan du skifte baggrundsfarve på hele skitsen når der er gået tre sekunder?
+frameCount er en variabel som indeholder det antal frames der er gået siden programmet startede. Der er tres frames i sekundet. Kan du skifte baggrundsfarve på hele skitsen når der er gået tre sekunder?
+
+Lidt sværere..
+
+Prøv at lave en if() betingelse inden i en anden if betingelse. Du kan for eksempel sige, at hvis..
+
+mouseX > width/2 
+
+Og hvis.. 
+
+mouseY > height/2 
+
+Så..
+
+line(mouseX, 0, mouseX, height);
+
+Eller noget andet..
+
 
 
 */
