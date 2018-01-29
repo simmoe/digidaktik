@@ -47,9 +47,11 @@ Et if(){} statement er opbygget som et spørgsmål og et svar.
 
 OPGAVER - SELVSTÆNDIGT
 
-Prøv at få programmet til at tegne en anden baggrundsfarve hvis X er mindre end 300
+Prøv at få programmet til at tegne en anden baggrundsfarve på cirklen hvis X er mindre end 300
 
 Få så programmet til at skifte mellem tre forskellige farver i cirklen. Når musens X er hhv før, på og efter cirklen
+
+frameCount er en variabel som indeholder det antal frames der er gået siden programmet startede. Der ere tres frames i sekundet. Kan du skifte baggrundsfarve på hele skitsen når der er gået tre sekunder?
 
 
 */
