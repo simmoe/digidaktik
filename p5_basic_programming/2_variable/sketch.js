@@ -20,7 +20,7 @@ function draw() {
   ellipse(circleX, 200, 80, 80);
     
 
-  //Koden nedenfor er bare til for at vise hvad variablen er sat til    
+  //Koden nedenfor viser teksten, hvor man kan se hvad variablen circleX er sat til    
   fill(255);
   textSize(12);    
   text("circleX: " + circleX, 20, 360, 200, 200);
@@ -31,15 +31,18 @@ Opgaver
 
 Prøv først at sætte variablen circleX til noget andet - fx 80, og tryk gem (ctrl-s || cmd-s). Nu flytter cirklen sig - selvfølgelig - fordi variablen jo definerer dens x-værdi. 
 
-Prøv at lav en ny variabel - circleY - og brug den til at sætte cirklens y-værdi.
+Lav en ny variabel - kald den circleY - og brug den til at sætte cirklens y-værdi.
 
 Se om du kan skrive en tekst med circleY på skærmen - på samme måde som circleX skrives.
+_ _ _ _ 
 
-Lad os prøve at få cirklen til at bevæge sig hen over skærmen. Husk på at metoden draw() udføres 60. gange hvert sekund. Prøv at plusse variablen circleX med 1 hver gang..
+Lad os prøve at få cirklen til at bevæge sig hen over skærmen. Husk på at metoden draw() udføres 60. gange hvert sekund. 
+
+Prøv at plusse variablen circleX med 1 hver gang draw() udføres..
 
 Nu ser det lidt mærkeligt ud. Cirklen bliver ved med at blive tegnet, og teksten skriver tallene oven i hinanden. 
 
-Kald metoden background() med en eller anden baggrundsfarve lige før du tegner med fill() og ellipse(); Se https://p5js.org/reference/#/p5/background
+Kald metoden background(r, g, b) med en eller anden baggrundsfarve lige før du tegner med fill() og ellipse(); Se https://p5js.org/reference/#/p5/background
 
 Ok?
 
@@ -62,6 +65,8 @@ Kan du lave et nyt if() statement som vender speed til plus igen, når circleX e
 - - - - 
 
 Lidt sværere opgaver
+
+Variablen "frameCount" er indbygget i p5 og returnerer altid et tal mellem 1 og 60; Operatoren MODULO skrive som "%". Kan du få cirklens størrelse til at skifte med frameCount % 60? 
 
 Lige nu bruges funktionen fill() til at sætte cirklens farve til noget grønt. Kan du oprette en variabel - fx green - som styrer cirklens farve vha variablen circleX?
 

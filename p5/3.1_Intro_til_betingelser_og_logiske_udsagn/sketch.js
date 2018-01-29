@@ -32,23 +32,24 @@ function draw() {
   strokeWeight(4);
   //Navnet noFill() taler for sig selv - ingen baggrundsfarve til at starte med 
   noFill();
-  
-  //Men HVIS mouseX er større end 300 - SÅ lav en fyldfarve
-  if (mouseX > 300) {
-    fill(255, 0, 200);
-  }
-  
+    
   ellipse(300, 200, 100, 100);
 }
 
 /*
 
-OPGAVER 
+OPGAVE - PLENUM
+Programmet tegner en cirkel uden farve. Vi skal nu indføre et logisk statement, som gør at cirklen får en farve, hvis man kører musen over midten af programmet. 
 
-1  Prøv at få programmet til at tegne en anden baggrundsfarve hvis X er mindre end 300
+Koordinatet for musens markør hedder altid: mouseX, mouseY.
 
-2  Få programmet til at skifte mellem tre forskellige farver i cirklen. Når musens X er hhv før, på og efter cirklen 
+Et if(){} statement er opbygget som et spørgsmål og et svar. 
 
-3 Prøv at bruge funktionen text() til at skrive musens x-værdi ud på skærmen - kig efter den i referencen: https://p5js.org/reference/ 
+OPGAVER - SELVSTÆNDIGT
+
+Prøv at få programmet til at tegne en anden baggrundsfarve hvis X er mindre end 300
+
+Få så programmet til at skifte mellem tre forskellige farver i cirklen. Når musens X er hhv før, på og efter cirklen
+
 
 */
