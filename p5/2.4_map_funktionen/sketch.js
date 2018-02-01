@@ -29,5 +29,7 @@ OPGAVER
 
 3  Prøv at gøre så den nye cirkel styrer den blå farve
 
-4 Avanceret: kan du mon finde ud af at tage en farveværdi fra et videoinput og mappe den til cirklens farve?
+4 På linket herunder kan du se en skitse i p5 referencen, hvor der optages lyd. Se om du kan implementere en lydoptagelse i din skitse, og mappe volumen niveauet til cirklens størrelse. 
+
+
 */
