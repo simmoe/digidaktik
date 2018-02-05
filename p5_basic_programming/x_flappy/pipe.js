@@ -2,11 +2,12 @@
 Modificeret til gymnasiebrug af Simon Moe*/
 
 function Pipe() {
-  this.top = random(height/2);
-  this.bottom = random(height/2);
+  this.top = random(height/2) + 40;
+  this.bottom = random(height/2 - 40);
   this.x = width;
   this.w = 20;
-  this.speed = 1     ;
+  this.speed = 1;
+  this.hit = false;
 
   this.highlight = false;
 
