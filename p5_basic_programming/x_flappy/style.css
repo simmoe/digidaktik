@@ -1,0 +1,10 @@
+button{
+}
+
+div.points{
+    background-color: beige;
+    padding:5px;
+    position:absolute;
+    top: 20;
+    left:20;
+}
