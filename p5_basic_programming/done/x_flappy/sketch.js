@@ -59,9 +59,12 @@ function draw() {
   if (frameCount % 100  == 0) {
     pipes.push(new Pipe());
   }
-    if(points < 0 || frameCount > 600){
-        gameOver();
+    if(points < 0){
+        gameOver("Game Over");
     }
+        if( frameCount > 600){
+            gameOver("Time's up");
+           }
     }        
 }
 
@@ -71,9 +74,9 @@ function keyPressed() {
   }
 }
 
-function gameOver(){
+function gameOver(txt){
     end = true;
-    gameOverText = createElement('div', "<h1>Game Over</h1><p>Points: " + points + "</p>");
+    gameOverText = createElement('div', "<h1>" + txt + "</h1><p>Points: " + points + "</p><button class='small' onclick='location.reload()'>Prøv igen</button>");
     gameOverText.addClass("gameOverText");
 }
 /*
