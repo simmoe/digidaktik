@@ -9,7 +9,7 @@ function Ball(x, y, size, xspeed) {
     this.col = [255, 0, 0];
     this.xspeed = xspeed;
     
-    this.gravity = .5;
+    this.gravity = .6;
     this.velocity = 0;
     this.yfriction = .99;
     this.xfriction = .996;
@@ -48,6 +48,7 @@ function Ball(x, y, size, xspeed) {
 
   this.up = function() {
       this.velocity -= this.lift;
+      this.xspeed = random(-2,2);
   }
  
 }
