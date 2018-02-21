@@ -2,16 +2,17 @@
 Videre modificeret og udviklet til gymnasiebrug af Simon Moe 
 */
 
-function Ball(x, y, size) {
+function Ball(x, y, size, xspeed) {
     this.y = y;
     this.x = x;
-    this.xspeed = 0;
     this.size = size;
-    this.col = [random(80,100), random(80,100), random(80,100)];
+    this.col = [255, 0, 0];
+    this.xspeed = xspeed;
     
-    this.gravity = this.size * .02;
+    this.gravity = .5;
     this.velocity = 0;
-    this.friction = .995;
+    this.yfriction = .99;
+    this.xfriction = .996;
     this.lift = 15;
 
   this.show = function() {
@@ -21,13 +22,28 @@ function Ball(x, y, size) {
 
   this.update = function() {      
       this.velocity += this.gravity;
-      this.velocity *= this.friction;
+      this.velocity *= this.yfriction;
       this.y += this.velocity;
       
-      if(this.y > height-this.size/2){
-          this.y = height-this.size/2;
+      this.xspeed *= this.xfriction;
+      this.x += this.xspeed;
+            
+      if(this.y > height - this.size/2){
+          this.y = height - this.size/2;
           this.velocity = -this.velocity;
       }
+      if(this.y <= 0 + this.size/2){
+          this.velocity = - this.velocity;
+      }
+      if(this.x > width - this.size/2){
+          this.x = width - this.size/2;
+          this.xspeed = - this.xspeed;
+      }
+      if(this.x <= 0 + this.size/2){
+          this.x = 0 + this.size/2;
+          this.xspeed = -this.xspeed;
+      }
+      
   }
 
   this.up = function() {

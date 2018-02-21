@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background("#383838");
+  background(0);
   frameRate(20)
 
   var total = 5;

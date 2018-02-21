@@ -1,4 +1,4 @@
- // Daniel Shiffman
+// Daniel Shiffman
 // http://codingtra.in
 // http://patreon.com/codingtrain
 // Code for: https://youtu.be/cXgA1d_E-jY&
@@ -48,4 +48,3 @@ function keyPressed() {
     //console.log("SPACE");
   }
 }
- 

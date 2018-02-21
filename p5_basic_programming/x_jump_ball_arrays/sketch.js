@@ -3,33 +3,24 @@ Modificeret til gymnasiebrug af Simon Moe*/
 
 
 var balls = [];
+var ball;
 
 function setup() {
-  createCanvas(400, 600);
-    
-  for(i=0; i < 20 ; i++){
-    balls.push(new Ball(random(width), height/2,random(5, 50)));      
-  }
+    createCanvas(400, 600);
+    ball = new Ball(width/2, height/2, 32, 4);    
 }
 
 function draw() {
     background(0);
-
-    for(i=0; i < balls.length; i++){
-        balls[i].update();
-        balls[i].show();
-    }
-
+    ball.update();
+    ball.show();
 }
 
  function keyPressed() {
   if (key == ' ') {
-    for(i=0; i < balls.length; i++){
-        balls[i].up();
-    }
-    }
-}
-
+      ball.up();
+  }
+ }
 
 /*
 Opgaver 

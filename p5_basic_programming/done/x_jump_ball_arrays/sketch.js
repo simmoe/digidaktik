@@ -5,8 +5,8 @@ Modificeret til gymnasiebrug af Simon Moe*/
 var balls = [];
 
 function setup() {
-  createCanvas(400, 600);
-  for(i=0; i < 20; i++)
+  createCanvas(800, 200);
+  for(i=0; i < 200; i++)
     balls.push(new Ball(random(width),0,random(5, 50)));
 }
 

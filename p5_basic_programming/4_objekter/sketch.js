@@ -54,7 +54,7 @@ Prøv at oprette tre ander instanser af objektet - square_2, square_3 og square_
 Opret dem på samme måde som square_1 i setup(), men giv dem forskellige værdier (x, y, h, w, p) i constructor funktionen
 
 Opgave 6 
-Giv objekterne forskellige farver ved at bruge fill(r, g, b) funktionen før display()
+Giv objekterne forskellige farver ved at bruge fill(r, g, b) funktionen før display() - eller endnu bedre ved at 
 
 Opgave 7
 Prøv at lav dine squares endeposition til et logo..

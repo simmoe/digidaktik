@@ -7,6 +7,7 @@ function Ball(x, y, size) {
     this.x = x;
     this.xspeed = 0;
     this.size = size;
+    this.col = [0,150,random(50,255), random(100,255)];
     
     this.gravity = this.size * .02;
     this.velocity = 0;
@@ -14,7 +15,7 @@ function Ball(x, y, size) {
     this.lift = 15;
 
   this.show = function() {
-    fill(255);
+    fill(this.col);
     ellipse(this.x, this.y, this.size, this.size);
   }
 
@@ -23,7 +24,7 @@ function Ball(x, y, size) {
       this.velocity *= this.friction;
       this.y += this.velocity;
       
-      if(this.y > height-this.size/2){
+      if(this.y >= height-this.size/2){
           this.y = height-this.size/2;
           this.velocity = -this.velocity;
       }
