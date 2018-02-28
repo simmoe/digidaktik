@@ -98,5 +98,9 @@ Afsluttende, rimelig svær opgave
 
 Kan du sørge for at spillet slutter enten hvis der går ti sekunder - eller hvis man kommer under 0 i point. Og at der dermed kommer en stor tekst frem på skærmen, hvor der står hhv "Game Over" eller "The End"?
 
+Kan du også sørge for, at der kommer en ny knap frem som viser hvor mange point man fik?
+
+Og kan du sørge for at man kan klikke på knappen og begynde forfra? (tip: brug location.reload() - https://www.w3schools.com/jsref/met_loc_reload.asp )
+
 
 */
