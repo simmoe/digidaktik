@@ -3,24 +3,27 @@ Modificeret til gymnasiebrug af Simon Moe*/
 
 
 var ball;
-var balls = [];
 
 function setup() {
     createCanvas(400, 600);
-    ball = new Ball(width/2, height/2, 32, 4);  
+    ball = new Ball(width/2, height/2, 32, 3);
 }
 
 function draw() {
     background(0);
     ball.update();
-    ball.show();    
+    ball.show();      
 }
 
- function keyPressed() {
-  if (key == ' ') {
-      ball.up();
-  }
- }
+function keyPressed() {
+    if (key == ' ') {
+        ball.up();
+    }
+}
+
+function mouseClicked(){
+}
+
 
 /*
 OPGAVER I PLENUM 
@@ -35,20 +38,32 @@ var balls = [];
 
 De firkantede paranteser fortæller programmet, at variablen er et array - det er ikke altid nødvendigt at udpensle i Javascript, men med arrays er det. 
 
-I setup funktionen bliver der nu lavet en enkelt bold - men vi vil lave mange. Det kan vi for eksempel gøre ved at bruge en løkke. Du husker måske syntaksen:
+I setup funktionen bliver der nu lavet en enkelt bold - men vi vil lave mange. Og vi vil gemme dem i vores array: balls.  
 
-for(i=0; i < 20; i++){
-    balls[i] = new Ball(h, w, s, x);
+Når vi skal oprette nye elementer i et Array kan vi bruge metoden push:
+
+balls.push(new Ball(random(width), 40, 24, random(-2,2)));
+
+Lad os skrive det ind i setup. 
+
+Nu opretter vi ganske vist et array med foreløbig en enkelt bold i - men vi viser dem aldrig og vi opdaterer dem aldrig. Lad os lave en ny løkke i draw() som kalder metoderne update og show på alle de bolde der måtte være i vores Array:
+
+for(i=0; i < balls.lentgh; i++){
+    balls[i].update();
+    balls[i].show();
 }
 
-Skriv for-loopet ind i setup med relevante parametre i parantesen. 
+Skriv for-loopet ind i draw()
 
 _ _ _ _ _ _ _ _
 
 SELVSTÆNDIGE OPGAVER
-Nu opretter vi ganske vist et array med bolde - men vi viser dem aldrig og vi opdaterer dem aldrig. Se om du kan lave en ny løkke i draw() som kalder metoderne update og show på alle de nye bolde
 
-Nu er der en masse bolde - men de er allesammen ens. Se om du kan bruge metoden random() til at give dem forskellige parametre når du opretter dem i setup - 
+I koden er de en tom funktion: mouseClicked - den bliver kaldt når musen klikker. Kan du bruge metoden til at pushe nye objekter ind i Arrayet?
+
+Måske kan du også bruge mouseX og mouseY til at oprette dem lige der hvor der klikkes? 
+
+Se om du kan bruge metoden random() til at give dem flere forskellige parametre når du opretter dem i setup - 
 https://p5js.org/reference/#/p5/random
 
 -husk at du godt kan bruge random(neg,pos) hvis du vil have boldene til at svinge i forskellige retninger på x-aksen 
@@ -65,15 +80,13 @@ Lige nu hopper små og store bolde lige højt - sådan er det ikke i den virkeli
 
 Se om du  - ligesom sidst - kan gøre boldens friktion afhængig af dens størrelse i ball.js filen. 
 
-(The weight of an object is the force of gravity on the object and may be defined as the mass times the acceleration of gravity)
-
 Kan du give boldene farver, så de er blå når de er store og grønne når de er små?
 
 Tip: du kan bruge map() funktionen.
 
-_ _ _ _ _ _ _ _
+Kan du skrive en for løkke, så der starter med at blive oprettet 100 objekter?
 
-SVÆR OPGAVE
+_ _ _ _ _ _ _ _
 
 
 */
