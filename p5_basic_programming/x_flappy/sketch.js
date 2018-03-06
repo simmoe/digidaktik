@@ -73,7 +73,7 @@ Point. Vi vil gerne have pointtælleren øverst på skærmen til at vise nogle p
 
 Se først om du kan oprette en variabel: points, og skrive den i pointfeltet i stedet for teksten "nul".
 
-Brug variablen frameCount og MODULO operatoren til at sørge for at der bliver uddelt nøjagtige 20 point i sekundet.
+Brug variablen frameCount og MODULO operatoren til at sørge for at der bliver uddelt nøjagtig 20 point i sekundet.
 
 Kan du så også sørge for, at der bliver trukket 80 point fra, hver gang flappy støder ind i en bjælke?
 
@@ -96,7 +96,7 @@ _ _ _ _ _ _ _ _
 
 Afsluttende, rimelig svær opgave
 
-Kan du sørge for at spillet slutter enten hvis der går ti sekunder - eller hvis man kommer under 0 i point. Og at der dermed kommer en stor tekst frem på skærmen, hvor der står hhv "Game Over" eller "The End"?
+Kan du sørge for at spillet slutter enten hvis der går tyve sekunder - eller hvis man kommer under 0 i point. Og at der dermed kommer en stor tekst frem på skærmen, hvor der står hhv "Game Over" eller "The End"?
 
 Kan du også sørge for, at der kommer en ny knap frem som viser hvor mange point man fik?
 
