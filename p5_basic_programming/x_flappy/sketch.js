@@ -4,23 +4,29 @@ Modificeret til gymnasiebrug af Simon Moe*/
 
 var bird;
 var pipes = [];
-var points = 0;
 var end = false;
+var points = 0;
 
 function setup() {
     createCanvas(400, 400);
     bird = new Bird();
     pipes.push(new Pipe());
     
-    pointCounter = createElement('div', points);
+    pointCounter = createElement('div', "0");
     pointCounter.addClass("points");
 }
 
 function up(){
     bird.up();
 }
+
 function draw() {
     background(0);
+    
+    
+    if(frameCount % 60 == 0){
+        points +=20;
+    }
     pointCounter.html(points);
 
   for (var i = pipes.length-1; i >= 0; i--) {
@@ -75,13 +81,29 @@ Se først om du kan oprette en variabel: points, og skrive den i pointfeltet i s
 
 Brug variablen frameCount og MODULO operatoren til at sørge for at der bliver uddelt nøjagtig 20 point i sekundet.
 
-Kan du så også sørge for, at der bliver trukket 80 point fra, hver gang flappy støder ind i en bjælke?
+Tip: du lave en betingelse som spørger om frameCount % 20 == 0. Inden i betingelsen skal du så lægge 20 til points variablen. 
+
+Kan du så også sørge for, at der bliver trukket nogle point fra, hver gang flappy støder ind i en bjælke?
+
+Tip: Se i koden hvor der står:             console.log("Bad points"); 
 
 _ _ _ _ _ _ _ _
 
-Hvis pointene kommer under nul, skal spillet slutte. Lav først en funktion der hedder gameOver(), som du kalder, hvis points er mindre end nul. 
+Hvis pointene kommer under nul, skal spillet slutte. Lav først en funktion der hedder gameOver().
+
+Tip: 
+
+function gameOver(){
+
+}
+
+Kald så den nye funktion fra draw(), hvis points er mindre end nul. 
+
+Tip: Lav en betingelse som spørger om points er mindre end nul..
 
 Lav derefter en variabel: gameOver - som du sætter til false fra spillets start. Alt inden i draw metoden skal KUN udføres hvis variablen gameOver er false! Det vil altså sige, at hvis gameOver bliver true - så sker der ingenting i draw() længere. 
+
+Tip: lav en betingelse som det allerførste i draw() som spørger om gameOver er true - 
 
 Nu vil vi gerne have en tæller mere i øverste højre side af skærmen, som viser hvor mange sekunder man har klaret. 
 
