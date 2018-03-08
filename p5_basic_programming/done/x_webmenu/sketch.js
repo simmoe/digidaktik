@@ -56,6 +56,8 @@ OPGAVER I PLENUM
 
 I denne skitse oprettes der et array af bolde (ball.js), som fyldes hverm gang frameCount % 100 giver nul. Vi skal forsøge at give boldende nogle egenskaber - et navn og en url - og sørge for at når man klikker på dem kommer man hen til forskellige sider i menuen. 
 
+Først skal vi give boldene nogle flere egenskaber. 
+
 
 
 */
