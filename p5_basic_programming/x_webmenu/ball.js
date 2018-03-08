@@ -2,33 +2,28 @@
 Videre modificeret og udviklet til gymnasiebrug af Simon Moe 
 */
 
-function Ball(x, y, size, xspeed, names, urls) {
+function Ball(x, y, size, xspeed) {
     this.y = y;
     this.x = x;
     this.size = size;
-    this.col = [0, random(255), 100, 180];
+    this.col = [0, 255, 100, 150];
     this.xspeed = xspeed;
-    this.names = names;
-    this.urls = urls;
     
     this.gravity = .6;
     this.velocity = 0;
-    this.yfriction = .03;
+    this.yfriction = this.size * 0.0015;
     this.xfriction = .996;
-    this.lift = 15;
+    this.lift =  15;
 
   this.show = function() {
     fill(this.col);
-      noStroke();
+    noStroke();
     ellipse(this.x, this.y, this.size, this.size);
-      textSize(20);
-      fill(220);
-    text(this.names, this.x - 35, this.y + 6);
   }
   
   this.click = function(){
       if(dist(this.x, this.y, mouseX, mouseY) < this.size){
-          window.location.href = this.urls;
+
       }
   }
 
@@ -68,6 +63,12 @@ function Ball(x, y, size, xspeed, names, urls) {
 
 /*
 
+OPGAVER 
 
+Her har vi så objektet bold. Lige nu tager det fire parametre i constructoren: x, y, size, xspeed. Tilføj to mere: titel og url - og husk at gøre dem lokale nedenfor, ex:
+
+this.titel = titel; 
+
+Brug funktionen text(string, x, y) til at skrive sidetitlen på bolden;
 
 */
