@@ -53,5 +53,5 @@ div.gameOverText{
     border-radius: 8px;
     top: 200;
     left: 20;
-    transition: all 1s;
+    transition: all 3s;
 }
