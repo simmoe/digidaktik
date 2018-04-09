@@ -1,0 +1,8 @@
+.hidden{
+    display: none;
+}
+
+.shown{
+    transition:all 2s;
+    display:inline;   
+}
