@@ -48,12 +48,16 @@ void setup() {
   // or for testing you could ...
   //                 Parent  In        Out
   //                   |     |          |
-  myBus = new MidiBus(this, -1, 1); // Create a new MidiBus with no input device and the default Java Sound Synthesizer as the output device.
+  myBus = new MidiBus(this, -1, "Bus 1"); // Create a new MidiBus with no input device and the default Java Sound Synthesizer as the output device.
   
    frameRate(10);
 }
 
 
+void mouseClicked(){
+  print("Sending stuff");
+   myBus.sendControllerChange(1, 62, 0);
+}
 
 void draw() {
   background(0);  
@@ -80,6 +84,7 @@ void drawText() {
 }
 
 void sendValue(int number, int value) {
+    print(channel + " " + number + " " + value + "\n");
     myBus.sendControllerChange(channel, number, value);
 }
 

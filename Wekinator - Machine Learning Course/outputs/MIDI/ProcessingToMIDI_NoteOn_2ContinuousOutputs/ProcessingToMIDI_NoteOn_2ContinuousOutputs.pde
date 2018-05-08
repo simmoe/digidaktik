@@ -49,11 +49,15 @@ void setup() {
   // or for testing you could ...
   //                 Parent  In        Out
   //                   |     |          |
-  myBus = new MidiBus(this, -1, 1); // Create a new MidiBus with no input device and the default Java Sound Synthesizer as the output device.
+  //myBus = new MidiBus(this, -1, 1); // Create a new MidiBus with no input device and the default Java Sound Synthesizer as the output device.
+  
+  //myBus = new MidiBus(this, "MPKmini2", "MPKmini2"); 
+  
+  myBus = new MidiBus(this, -1, "Bus 1");
   
    createControls();
-   frameRate(10);
-}
+   frameRate(60);
+  }
 
 
 
@@ -75,6 +79,13 @@ void drawText() {
   text("Sending MIDI:", 10, 110);
 }
 
+void mouseClicked(){
+  print("Slukker");
+  for(int i=0; i<127; i++){
+    myBus.sendNoteOff(0, i, 0);
+  }
+}
+
 void createControls() {
   cp5 = new ControlP5(this);
   
@@ -88,10 +99,14 @@ void createControls() {
 }
 
 void sendNote(int pitch, int velocity) {
+  print(pitch + " pitch \n");
+  print(velocity + " vel \n");
   if (velocity > 0) {
-    myBus.sendNoteOff(0, lastNote, velocity); //turn off last note!
-    lastNote = pitch;
-    myBus.sendNoteOn(0, pitch, velocity); // Send a Midi noteOn
+    if(lastNote != pitch){
+      myBus.sendNoteOff(0, lastNote, velocity); //turn off last note!
+      lastNote = pitch;
+      myBus.sendNoteOn(0, pitch, velocity); // Send a Midi noteOn
+    }
   } else {
     myBus.sendNoteOff(0, pitch, velocity);
   }
