@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One|Russo+One');
+
+.flow{
+    display:flex;
+}
+body, button{
+    font-family: 'Russo One';
+}
+button{
+    width: 400px;
+    height: 40px;
+    font-size: 30;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;    border:none;
+    background-color: darkcyan;
+    border-radius: 8px;
+}
+button.small{
+    width:200px;
+    background-color: hotpink;
+    border:2px solid white;
+    margin-bottom:20px;
+}
+
+div {
+    background-color:rgba(0,54,54, .8);
+}
+div.points{
+    color: white;
+    font-size: 30;
+    text-shadow: 2px 2px 4px #000000;    border:none;
+    padding: 20px;
+    position:absolute;
+    border-radius: 8px;
+    top: 20;
+    left:20;
+}
+
+div.seconds{
+    color: white;
+    font-size: 30;
+    text-shadow: 2px 2px 4px #000000;    border:none;
+    padding: 20px;
+    position:absolute;
+    border-radius: 8px;
+    top: 20;
+    left: 325;
+}
+
+
+div.gameOverText{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;    border:none;
+    width: 378px;
+    position:absolute;
+    border-radius: 8px;
+    top: 200;
+    left: 20;
+    transition: all 3s;
+}

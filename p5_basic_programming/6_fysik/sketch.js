@@ -5,7 +5,7 @@ Modificeret til gymnasiebrug af Simon Moe*/
 var ball;
 
 function setup() {
-  createCanvas(400, 600);
+  createCanvas(800, 600);
   ball = new Ball();
 }
 
