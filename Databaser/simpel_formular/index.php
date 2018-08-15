@@ -21,7 +21,6 @@
         <div id="list"><a href="?list=true">Liste</a></div>
         <div id="add"><a href="?add=true">Tilføj</a></div>
         <div id="submit"><a href="?submit=true">Tilmeld</a></div>
-        <div id="submit"><a href="?opgaver=true">Opgaver</a></div>
     </div>
 
     <?php
@@ -47,10 +46,6 @@
      
      if($_GET['submit']==="true"){
         include 'submit.php';
-     }
-     
-     if($_GET['opgaver']==="true"){
-        include 'opgaver.php';
      }
      
      ?>
