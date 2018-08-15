@@ -1,5 +1,5 @@
 <?php
-$sql = "SELECT LAN_id, titel, dato, seats FROM LAN ORDER BY dato DESC";
+$sql = "SELECT LAN_id, titel, dato, pladser FROM LAN ORDER BY dato DESC";
 $result = $conn->query($sql);   
 ?>
 
@@ -17,7 +17,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<tbody><tr><td>".$row["titel"]."</td><td>".$row["dato"]."</td><td>".$row["seats"]."</td></tr></tbody>";
+        echo "<tbody><tr><td>".$row["titel"]."</td><td>".$row["dato"]."</td><td>".$row["pladser"]."</td></tr></tbody>";
     }
 } else {
     echo "0 results";

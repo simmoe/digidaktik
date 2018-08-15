@@ -12,5 +12,5 @@ function draw() {
     background(255,204,0);
     fill('#fae');
     noStroke();
-    ellipse(320, 180, 55, 55);
+    ellipse(320, 100, 55, 55);
 }

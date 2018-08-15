@@ -10,7 +10,7 @@ if (!empty($_POST)){
         echo "<p>Udfyld venligst alle felterne</p>";
     }else{
     
-        $sql = "INSERT INTO LAN (titel, dato, seats) 
+        $sql = "INSERT INTO LAN (titel, dato, pladser) 
         VALUES (
         '".$titel."',
         '".$dato."',

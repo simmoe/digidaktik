@@ -8,7 +8,7 @@ $dbname ="moestudent_it_slotshaven_dk";
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    $status = "<h4>Connection failed: " . $conn->connect_error . "</h4>";
 } else{
 	$status="<hr><h4>Forbindelse til database oprettet...</h4><hr>";
 }
