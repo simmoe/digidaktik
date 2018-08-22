@@ -10,12 +10,7 @@ if (!empty($_POST)){
         echo "<p>Udfyld venligst alle felterne</p>";
     }else{
     
-        $sql = "INSERT INTO LAN (titel, dato, pladser) 
-        VALUES (
-        '".$titel."',
-        '".$dato."',
-        ".$pladser."
-        )";
+        $sql = "insert into Begivenhed (titel, dato, pladser) VALUES ('$titel','$dato',$pladser)";
 
         if ($conn->query($sql) === TRUE) {
     	   echo "New record created successfully";

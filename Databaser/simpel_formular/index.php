@@ -1,4 +1,7 @@
-<?php include 'connect.php';?>
+<?php 
+    include 'connect.php';
+    session_start();
+?>
 
 <html>
 
@@ -18,37 +21,58 @@
     <?php echo $status?>
     <h1>LAN Parties 2018</h1>
     <div class="flow">
-        <div id="list"><a href="?list=true">Liste</a></div>
-        <div id="add"><a href="?add=true">Tilføj</a></div>
+        <div id="welcome"><a href="?welcome=true">Velkommen</a></div>
+        <div id="list"><a href="?list=true">Begivenheder</a></div>
         <div id="submit"><a href="?submit=true">Tilmeld</a></div>
+        <?php 
+        if(strpos($_SESSION['roller'], 'Administrator') > 1){ 
+        ?>
+        <div id="add"><a href="?add=true">Tilføj</a></div>
+        <?php } ?>
     </div>
 
-    <?php
 
-     if($_GET['list']==="true"){ 
+
+<?php    
+    
+if(!isset($_SESSION['brugernavn'])){
+    if($_GET['create_user'] === "true"){
+        include('create_user.php');
+    }else{
+        include('login.php');
+    }
+}else{
+    
+    
+    if($_GET['welcome']==="true"){ 
+        include 'welcome.php';
+    ?>
+        <script>
+            document.getElementById("welcome").classList.add("active");
+        </script>
+    <?php
+    }
+    if($_GET['list']==="true"){ 
         include 'list_lan.php';
     ?>
         <script>
             document.getElementById("list").classList.add("active");
-
         </script>
-        <?php
-     }
-    
-     if($_GET['add']==="true"){
+    <?php
+    }
+    if($_GET['add']==="true"){
         include 'add_lan.php';
     ?>
-            <script>
-                document.getElementById("add").classList.add("active");
-            </script>
-            <?php
-     }
-     
-     if($_GET['submit']==="true"){
+        <script>
+            document.getElementById("add").classList.add("active");
+        </script>
+    <?php
+    } 
+    if($_GET['submit']==="true"){
         include 'submit.php';
-     }
-     
-     ?>
+    }
+
+}?>
 
 </body>
 

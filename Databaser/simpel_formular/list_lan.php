@@ -1,5 +1,5 @@
 <?php
-$sql = "SELECT LAN_id, titel, dato, pladser FROM LAN ORDER BY dato DESC";
+$sql = "SELECT id, titel, dato, pladser FROM Begivenhed ORDER BY dato DESC";
 $result = $conn->query($sql);   
 ?>
 
@@ -20,7 +20,7 @@ if ($result->num_rows > 0) {
         echo "<tbody><tr><td>".$row["titel"]."</td><td>".$row["dato"]."</td><td>".$row["pladser"]."</td></tr></tbody>";
     }
 } else {
-    echo "0 results";
+    echo "0 results " . $conn->error;
 }
 ?>
 </table>
