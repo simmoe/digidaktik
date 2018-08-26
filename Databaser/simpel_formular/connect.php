@@ -1,8 +1,8 @@
 <?php
-$servername = "moestudent.it.slotshaven.dk";
-$username = "moestudent.it.sl";
-$password = "123456";
-$dbname ="moestudent_it_slotshaven_dk";
+$servername = "dinserver.it.slotshaven.dk";
+$username = "ditbrugernavn";
+$password = "dinadgangskode";
+$dbname ="din_server_it_slotshaven_dk";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
