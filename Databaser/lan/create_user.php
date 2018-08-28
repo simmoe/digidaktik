@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $hashedPW = hash('sha256', $saltedPW);
 
         # Og indsæt den nye bruger 
-        $query = "insert into Person (fornavn, username, password, salt) values ('$escapedFornavn', '$escapedBrugernavn', '$hashedPW', '$salt'); ";
+        $query = "insert into Person (fornavn, brugernavn, password, salt) values ('$escapedFornavn', '$escapedBrugernavn', '$hashedPW', '$salt'); ";
                 
         if ($conn->query($query) === TRUE) {
            $last_id = $conn->insert_id;

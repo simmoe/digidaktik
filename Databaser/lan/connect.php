@@ -1,11 +1,11 @@
 <?php
-$servername = "dinserver.it.slotshaven.dk";
-$username = "ditbrugernavn";
-$password = "dinadgangskode";
-$dbname ="din_server_it_slotshaven_dk";
+$servername = "moestudent.it.slotshaven.dk";
+$brugernavn = "moestudent.it.sl";
+$password = "123456";
+$dbname ="moestudent_it_slotshaven_dk";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $brugernavn, $password, $dbname);
 $conn->set_charset("utf8");
 
 // Check connection

@@ -1,12 +1,12 @@
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // username og password bliver sendt via POST fra formen
+    // brugernavn og password bliver sendt via POST fra formen
     // ordene strippes for mellemrum og ulovlige tegn
-    $escapedBrugernavn = mysqli_real_escape_string($conn ,$_POST['username']);
+    $escapedBrugernavn = mysqli_real_escape_string($conn ,$_POST['brugernavn']);
     $escapedPassword = mysqli_real_escape_string($conn ,$_POST['password']);
     //hent password salt - kode i databasen som skal sættes sammen med passwordet for at validere
-    $saltQuery = "select salt from Person where username = '$escapedBrugernavn'";
+    $saltQuery = "select salt from Person where brugernavn = '$escapedBrugernavn'";
     $result = $conn->query($saltQuery);
    
    //hvis der er en kode, så sæt variablen $salt, ellers giv en fejl
@@ -25,12 +25,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hashedPW = hash('sha256', $saltedPW);
        
     //Lav en sql streng som henter brugeren, hvis passwordet matcher koden i password feltet i databasen
-    $query = "select * from Person where username = '$escapedBrugernavn' and password = '$hashedPW'; ";
+    $query = "select * from Person where brugernavn = '$escapedBrugernavn' and password = '$hashedPW'; ";
     $result = $conn->query($query);
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             # så registrerer vi i den nuværende session, at brugernavnet findes
-            $_SESSION['brugernavn'] = $row['username'];
+            $_SESSION['brugernavn'] = $row['brugernavn'];
             $_SESSION['fornavn'] = $row['fornavn'];
 
             $rolleQuery = 
@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <p>Log ind | <a href="?create_user=true">Opret bruger</a></p>
 <form action="" method="post">
-    <label>UserName  :</label><input type="text" name="username" class="box" /><br /><br />
+    <label>brugernavn  :</label><input type="text" name="brugernavn" class="box" /><br /><br />
     <label>Password  :</label><input type="password" name="password" class="box" /><br/><br />
     <input type="submit" value=" Submit " /><br />
 </form>
