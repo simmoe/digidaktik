@@ -35,10 +35,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $rolleQuery = 
                 "select rolle from Rolle ".
-                    "left join Person_Rolle on Rolle.rolle_id = Person_Rolle.rolle_id ".
-                    "left join Person on Person_Rolle.person_id = Person.person_id ".
-                    "where Person.person_id = " . $row['person_id']. 
-                     " GROUP BY Rolle.rolle_id";
+                    "left join Person_Rolle on rolle.id = Person_rolle.id ".
+                    "left join Person on Person_Rolle.person_id = Person.id ".
+                    "where Person.id = " . $row['person_id']. 
+                     " GROUP BY rolle.id";
             
             $roles = $conn->query($rolleQuery);
             if ($roles->num_rows > 0) {
