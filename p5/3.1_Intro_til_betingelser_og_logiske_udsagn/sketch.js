@@ -34,7 +34,7 @@ function draw() {
   noFill();
     
   ellipse(300, 200, 100, 100);
-    
+        
 }
 
 /*
@@ -48,31 +48,30 @@ Et if(){} statement er opbygget som et spørgsmål og et svar.
 
 Lad os prøve at ændre baggrundsfarven også. 
 
-OPGAVER - SELVSTÆNDIGT
+_ _ _ _ _ _ _ _
 
+OPGAVER - SELVSTÆNDIGT
 
 Prøv at få programmet til at tegne en anden baggrundsfarve (udskift noFill() med fill(r,g,b)) på cirklen hvis X er mindre end 300..
 
-Få så programmet til at skifte mellem tre forskellige farver i cirklen. Når musens X er hhv før, på og efter cirklen
+Få programmet til at skifte mellem tre forskellige farver i cirklen. Når musens X er hhv før, på og efter cirklen på x-aksen
 
-frameCount er en variabel som indeholder det antal frames der er gået siden programmet startede. Der er tres frames i sekundet. Kan du skifte baggrundsfarve på hele skitsen når der er gået tre sekunder?
+Få programmet til at lave baggrunden helt blå når musen er præcis over punktet (200,200) og ikke ellers (tip: brug operatoren ==)
+
+Få programmet til at tegne en rød cirkel et sted hvis x er større end 400 OG y er mindre end 100 (tip: brug operatoren &&)
+
 
 Lidt sværere..
 
-Prøv at lave en if() betingelse inden i en anden if betingelse. Du kan for eksempel sige, at hvis..
+frameCount er en variabel som indeholder det antal frames der er gået siden programmet startede. Der er tres frames i sekundet. Kan du skifte baggrundsfarve på hele skitsen når der er gået tre sekunder?  tip: if(frameCount > ...)
 
-mouseX > width/2 
+Lav to variabler xPos og speed - og få cirklen til at bevæge sig til venstre når musen er til venstre for midten - og omvendt  
 
-Og hvis.. 
-
-mouseY > height/2 
-
-Så..
+Prøv at lave en if() betingelse inden i en anden if betingelse. Prøv at tegne en streg gennem midten af skitsen 
 
 line(mouseX, 0, mouseX, height);
 
-Eller noget andet..
-
+Hvis x er større end 200 og y er mindre end 100
 
 
 */
