@@ -1,9 +1,6 @@
 /* Daniel Shiffman http://codingtra.in http://patreon.com/codingtrain Code for: https://youtu.be/cXgA1d_E-jY&.
 Modificeret til gymnasiebrug af Simon Moe*/
 
-var col;
-var s = 25;
-
 function setup() {
     createCanvas(400, 400);
     background(0);
@@ -13,6 +10,8 @@ function setup() {
 /*
 
 I PLENUM
+
+Vi vil prøve at lave et program som laver skærmen sort-hvid ternet for hver pixel. 
 
 Først skal vi oprette et loop i et loop; Det første loop løber alle punkter på x-aksen igennem - det næste alle punkter på y-aksen.
 
