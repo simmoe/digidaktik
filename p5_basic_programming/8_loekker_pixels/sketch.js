@@ -31,7 +31,7 @@ SVÆR OPGAVE TIL DE HURTIGE:
 Kan i oprette en variabel = 5 - og så tegne felterne sort/hvide i 5x5 pixels i stedet for 1x1? 
 -altså bruge rect(x, y, h, w) i stedet for point
 
-TIP: Du kan plusse med variablen i for loopet:
+TIP: Du kan plusse med variablen i for-loopet:
 for(x = 0; x < width; x += var)
 
 Hvad hvis i sætter variablen til 10?
