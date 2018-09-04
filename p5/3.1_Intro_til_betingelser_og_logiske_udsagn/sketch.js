@@ -19,12 +19,23 @@ Der er i øvrigt flere:
 
 */
 
+var sec = 0;
+
 function setup() {
   createCanvas(600, 400);
+    //frameRate(1000);
 }
 
 function draw() {
-  background(0);
+    
+  if(frameCount > 120){
+      background(100);
+  }else{
+      background(200);      
+  }
+    
+    
+    
   
   //stroke bestemmer farven på den næste streg der tegnes
   stroke(255);
@@ -33,7 +44,20 @@ function draw() {
   //Navnet noFill() taler for sig selv - ingen baggrundsfarve til at starte med 
   noFill();
     
-  ellipse(300, 200, 100, 100);
+  ellipse(300, 200, 100, 100);    
+
+    if(mouseX > 400 && mouseY < 100){
+        fill(200,0,0);
+        ellipse(mouseX,mouseY,20,20);
+    }
+    
+  stroke(255);    
+  strokeWeight(1);
+  textSize(30);    
+    if(frameCount % 60 == 0){
+        sec++;
+    }
+  text(sec + ", " + mouseY, 20, height-100);
         
 }
 
@@ -52,7 +76,7 @@ _ _ _ _ _ _ _ _
 
 OPGAVER - SELVSTÆNDIGT
 
-Prøv at få programmet til at tegne en anden baggrundsfarve (udskift noFill() med fill(r,g,b)) på cirklen hvis X er mindre end 300..
+Prøv at få programmet til at tegne en anden baggrundsfarve background(r,g,b) hvis X er mindre end 300..
 
 Få programmet til at skifte mellem tre forskellige farver i cirklen. Når musens X er hhv før, på og efter cirklen på x-aksen
 
