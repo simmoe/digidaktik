@@ -17,7 +17,6 @@
     <link rel="stylesheet" type="text/css" href="mystyles.css">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="skeleton.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -26,7 +25,6 @@
     <div class="flow">
         <div id="welcome"><a href="?welcome=true">Velkommen</a></div>
         <div id="list"><a href="?list=true">Begivenheder</a></div>
-        <div id="submit"><a href="?submit=true">Tilmeld</a></div>
         <?php if($admin){ ?>
         <div id="add"><a href="?add=true">Ny begivenhed</a></div>
         <?php } ?>
@@ -77,10 +75,6 @@ if(!isset($_SESSION['brugernavn'])){
         </script>
     <?php
     } 
-    if($_GET['submit']==="true"){
-        include 'submit.php';
-    }
-
 }?>
 
 </body>

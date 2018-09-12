@@ -1,8 +1,8 @@
 <?php
-$servername = "SERVER.it.slotshaven.dk";
-$brugernavn = "BRUGERNAVN";
-$password = "KODEORD";
-$dbname ="SER_VER_it_slotshaven_dk";
+$servername = "moe.it.slotshaven.dk";
+$brugernavn = "moe";
+$password = "it372181";
+$dbname ="moe";
 
 // Create connection
 $conn = new mysqli($servername, $brugernavn, $password, $dbname);

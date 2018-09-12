@@ -36,6 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             # så registrerer vi i den nuværende session, at brugernavnet findes
             $_SESSION['brugernavn'] = $row['brugernavn'];
             $_SESSION['fornavn'] = $row['fornavn'];
+            $_SESSION['efternavn'] = $row['efternavn'];
 
             $rolleQuery = 
                 "select rolle from Rolle ".

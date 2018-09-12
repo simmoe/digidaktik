@@ -2,6 +2,6 @@
    session_start();
    
    if(session_destroy()) {
-      header("Location:index.php?welcome=true");
+      header("Location:index.php");
    }
 ?>

@@ -56,7 +56,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
     <p><a href="?welcome=true">Log ind</a> | Opret bruger</p>
-    <p>Vælg venligst et brugernavn og en adgangskode</p>
+    <p>Udfyld venligst alle felter</p>
     <p class="error">
         <?php echo $msg;?>
     </p>
