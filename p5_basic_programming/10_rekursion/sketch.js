@@ -7,23 +7,15 @@ var oldX;
 
 function setup() {
     createCanvas(600, 600);
-    noLoop();
 }
 
 function draw() {
     background(0);
     stroke(255);
     noFill();
-    drawCircle(300, 200, 300);
+    ellipse(300, 300, 300);
 }
 
-function drawCircle(x, y, d) {
-    ellipse(x, y, d);
-    let newD = d *  random(0.2, .85);
-    if (x < width && d > [2]) {
-        drawCircle(newD + newD, y, d*0.5 );
-    }
-}
 
 
 /*
