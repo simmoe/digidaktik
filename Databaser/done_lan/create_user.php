@@ -16,16 +16,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     if($escapedFornavn == "" || $escapedEfternavn == "" || $escapedEmail == "" || $escapedAdresse == "" || $escapedTelefon == "" || $escapedKoen == "" || $escapedBrugernavn == "" || $escapedPassword == ""){
         $msg = "Udfyld venligst alle felterne";
     }else{          
-        # Generer en tilfældig salt til denne brugerkonto
         $salt = bin2hex(mcrypt_create_iv(32, MCRYPT_DEV_URANDOM));
         
-        # Sæt den sammen med det strippede kodeord i variablen $saltedPW
         $saltedPW =  $escapedPassword . $salt;
 
-        # Dan så et nyt krypteret kodeord med de to 
         $hashedPW = hash('sha256', $saltedPW);
 
-        # Og indsæt den nye bruger 
         $query = "insert into Person (fornavn, efternavn, alder, email, adresse, telefon, køn, brugernavn, password, salt) values ('$escapedFornavn', '$escapedEfternavn', '$escapedAlder', '$escapedEmail', '$escapedAdresse', '$escapedTelefon', '$escapedKoen', '$escapedBrugernavn', '$hashedPW', '$salt'); ";
                 
         if ($conn->query($query) === TRUE) {
