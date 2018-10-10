@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f1843d1-26b0-4753-87e9-015a3d37b4e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/sim.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/lolcat.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cat_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../weather/lectio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../weather/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../weather/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../weather/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/../weather/program.py" afterDir="false" />
+    <list default="true" id="4f1843d1-26b0-4753-87e9-015a3d37b4e5" name="Default Changelist" comment="Kørt kattekoden">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_pictures/.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cat_pictures/.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_pictures/lolcat_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cat_pictures/lolcat_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_pictures/lolcat_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cat_pictures/lolcat_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_pictures/lolcat_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cat_pictures/lolcat_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_pictures/lolcat_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cat_pictures/lolcat_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_pictures/lolcat_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cat_pictures/lolcat_5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_pictures/lolcat_6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cat_pictures/lolcat_6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_pictures/lolcat_7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cat_pictures/lolcat_7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +23,7 @@
     <session id="274421419">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.opened" value="2" />
@@ -42,12 +43,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1476" />
+          <entry key="py" value="1959" />
+          <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1476" />
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Python" value="1959" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -58,12 +61,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/program.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="795">
+              <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1539157901423" expanded="true" signature="43:48" ph="..." />
-                <marker date="1539157901423" expanded="true" signature="291:1095" ph="..." />
+                <marker date="1539159502690" expanded="true" signature="77:82" ph="..." />
+                <marker date="1539159502690" expanded="true" signature="350:1742" ph="..." />
+                <marker date="1539159502690" expanded="true" signature="1180:1185" ph="..." />
               </folding>
             </state>
           </provider>
@@ -182,18 +186,25 @@
       <option name="presentableId" value="Default" />
       <updated>1539109895379</updated>
     </task>
+    <task id="LOCAL-00001" summary="Kørt kattekode">
+      <created>1539158402648</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539158402648</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.24947146" />
-      <window_info id="Structure" order="1" sideWeight="0.50089765" side_tool="true" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" visible="true" weight="0.24947146" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -209,6 +220,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Kørt kattekode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kørt kattekode" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/cat_pictures/lolcat_2.jpg">
@@ -236,12 +251,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/program.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="795">
+          <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1539157901423" expanded="true" signature="43:48" ph="..." />
-            <marker date="1539157901423" expanded="true" signature="291:1095" ph="..." />
+            <marker date="1539159502690" expanded="true" signature="77:82" ph="..." />
+            <marker date="1539159502690" expanded="true" signature="350:1742" ph="..." />
+            <marker date="1539159502690" expanded="true" signature="1180:1185" ph="..." />
           </folding>
         </state>
       </provider>

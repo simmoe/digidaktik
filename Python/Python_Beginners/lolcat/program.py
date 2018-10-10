@@ -1,4 +1,6 @@
 import os
+import platform
+import subprocess
 
 import cat_service
 
@@ -10,6 +12,7 @@ def main():
     # download cats
     download_cats(folder)
     # display cats
+    display_cats(folder)
     print('Done...')
 
 
@@ -28,9 +31,10 @@ def get_or_create_output_folder():
 
     return full_path
 
+
 def download_cats(folder):
     print('Contacting server to download cats...')
-    cat_service.get_cat(folder,"")
+    cat_service.get_cat(folder, "")
     cat_count = 8
     for i in range(0, cat_count):
         # end kan defineres direkte i print
@@ -38,6 +42,20 @@ def download_cats(folder):
         print('Downloading cat: ' + name, end='... \n')
         cat_service.get_cat(folder, name)
 
+
+def display_cats(folder):
+    # open folder - er forskellig afhængig af operativsystem.
+    # Lad os finde ud af hvilket os vi er på - vi kunne sige: print(os.name)
+    # Men vi bruger i stedet modulet platform
+    # Mac os : Darwin Linux: Linux, Win: Windows
+    if platform.system() == 'Darwin':
+        subprocess.call(['open', folder])
+    elif platform.system() == 'Windows':
+        subprocess.call(['explorer', folder])
+    elif platform.system() == 'Linux':
+        subprocess.call(['xdg-open', folder])
+    else:
+        print("We don't support your OS: " + platform.system()
 
 
 if __name__ == '__main__':
