@@ -61,7 +61,7 @@ Reference: http://ability.nyu.edu/p5.js-speech/
 	function showResult()
 	{
 		if(myRec.resultValue==true) {
-            $("#words").fadeOut(3000);
+            $("#words").fadeOut(10000);
             sentence = myRec.resultString;
 			words.html("<p>" + sentence + "</p>", true);
             igenKnap.addClass("shown");
