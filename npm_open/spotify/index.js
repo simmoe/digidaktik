@@ -1,18 +1,11 @@
-var Spotify = require('node-spotify-api');
+  /* Load the HTTP library */
+  var http = require("http");
 
-var spotify = new Spotify({
-    id: "49dca623dc3140cd9d14338de2ea5e49",
-    secret: "324980afe69e435baa878192d1f8d45a"
-});
+  /* Create an HTTP server to handle responses */
 
-spotify
-    .search({
-        type: 'track',
-        query: 'All the Small Things'
-    })
-    .then(function (response) {
-        console.log(response);
-    })
-    .catch(function (err) {
-        console.log(err);
-    });
+  http.createServer(function(request, response) {
+    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.write("Hello World");
+    response.end();
+  }).listen(8888);
+
