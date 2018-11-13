@@ -1,0 +1,38 @@
+.tracks {
+    background-color:darkgray;
+    border: none;
+    color: white;
+    padding: 5px 0px 5px 40px;
+    margin-bottom:8px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    width: 400px;
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+}
+
+.tracks:hover {
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#login,
+#loggedin {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    padding:10px 0px 10px 40px; /*top right bottom left*/
+    color:white;
+    background-color: darkgray;
+    width:100%;
+}
+
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 500px;
+}

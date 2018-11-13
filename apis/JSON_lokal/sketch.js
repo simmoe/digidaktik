@@ -8,6 +8,8 @@ function preload() {
 
 function setup() {
     noCanvas();
+    //Hent titlen på datafilen
+    createElement('h1', data.description);
     //Hent en fugl
     var bird = data.birds[1].members[2];
     createP(bird);
