@@ -9,7 +9,7 @@ function setup() {
 
 function doSearch() {
     //Read the docs: https://www.npmjs.com/package/spotify-web-api-js
-    var spotifyApi = new SpotifyWebApi();
+    let spotifyApi = new SpotifyWebApi();
     //access_token er nødvendigt før vi kan bruge api'et. Men det får vi når login er gennemført
     spotifyApi.setAccessToken(access_token);
     //Kald funktionen searchTracks med det der står i input feltet
