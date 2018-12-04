@@ -12,3 +12,15 @@ var app = express();
 app.use(express.static('public'));
 console.log('Listening on 8888');
 app.listen(8888);
+var playlist = []
+
+data = {
+    titel: 'HEY JOE',
+    id: id
+}
+
+SocketIO.ON('NYSANG', addSongs);
+function addSongs(data){
+
+    playlist.push(data);
+}
