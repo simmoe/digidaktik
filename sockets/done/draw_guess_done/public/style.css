@@ -1,0 +1,26 @@
+body {
+    padding: 20px;
+    background-color: #BDBDBD;
+}
+
+body, h1, h2, h3, p{
+    color:#757575;
+}
+
+input, div {
+    transition: all .5s;
+}
+
+input{
+    font-size: 24px;
+    display:block;
+    width:500px;
+}
+
+#prepareMessage{
+    position: fixed;
+    left: 40px;
+    top: 200px;
+    font-size:40px;
+    color:#757575;
+}
