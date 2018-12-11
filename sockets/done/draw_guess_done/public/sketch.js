@@ -33,18 +33,30 @@ function setup() {
     mySocketId = myId;
   }
 
+  //Modtag notifikationer fra serveren til spillerne og sæt stateMessage
   socket.on('stateMessage', stateMsg);
-
   function stateMsg(msg) {
     stateMessage.show().html(msg);
   }
 
-  function sendGuess(){
-    if(state == 'playing'){
+  //Når der ikke er spillere nok, eller serveren sender ventesignal
+  socket.on('stateWaiting', waiting);
+  function waiting(){
+    console.log('venter');
+    guessInput.hide();
+    guessWord.hide();
+    prepareMessage.hide();
+    timeCounter.hide();
+    stateMessage.html('Spiller disconnected - venter på nye spilere..').show();
+  }
+
+  //Funktion der kaldes når der trykkes enter i gættefeltet
+  function sendGuess() {
+    if (state == 'playing') {
       socket.emit('guess', guessInput.value());
       guessInput.value('');
       guessInput.attribute('placeholder', 'Gæt sendt - prøv igen..');
-    }else{
+    } else {
       guessInput.value('');
       guessInput.attribute('placeholder', 'Tyvstart - vent lidt..');
     }
@@ -52,25 +64,24 @@ function setup() {
 
   //Når der skal tegnes 
   socket.on('drawingServer', drawScreen);
-
   function drawScreen(data) {
     fill(0);
     stroke(10);
     ellipse(data.x, data.y, 5, 5);
   }
 
+  //Besked fra erveren om at spillere er klar
   socket.on('playersReady', playersReady);
-
   function playersReady(players) {
     console.log('Gør klar til spil - playersReady');
+    //Ryd tegninger
     background('#F5F5F5');
     myTurn = false;
     stateMessage.hide();
-    guessInput.attribute('placeholder', 'Skriv dine gæt og tryk ENTER');
+    guessWord.hide();
+    guessInput.attribute('placeholder', 'Skriv dine gæt og tryk ENTER').show();
     scoreboard.html('<h3>Scoreboard</h3>');
     players.forEach(function (p, i) {
-      guessWord.hide();
-      guessInput.show();
       if (p.id == mySocketId) {
         scoreboard.html('<p><b>' + p.username + ' ' + p.point + '</b></p>', true);
       } else {
@@ -79,6 +90,7 @@ function setup() {
     });
   }
 
+  //Når serveren sender os et tegneord
   socket.on('yourTurn', myTurnFunc);
   function myTurnFunc(word) {
     myTurn = true;
@@ -87,6 +99,7 @@ function setup() {
     guessWord.html(word);
   }
 
+  //Når serveren sender sekundtæller
   socket.on('gameControl', updateGame);
   function updateGame(stateMessage) {
     if (stateMessage.state == 'prepare') {
@@ -103,10 +116,9 @@ function setup() {
   }
 }
 
+//Når klienten skal tegne
 function mouseDragged() {
-  console.log(state + ' ' + myTurn);
-  console.log(state=='playing' && myTurn);
-  if (myTurn && state=='playing') {
+  if (myTurn && state == 'playing') {
     let data = {
       x: mouseX,
       y: mouseY,

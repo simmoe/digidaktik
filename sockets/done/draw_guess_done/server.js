@@ -10,14 +10,14 @@ app.use(express.static('public'));
 var socket = require('socket.io');
 // Lav en instans af socket objektet, som bruger den server vi lavede tidligere 
 var io = socket(server);
-//Fortæl konsollen at servern kører
+//Fortæl konsollen at serveren kører
 console.log("Socket server kører på port 3000");
 
 let players = [];
-let words = ['ged', 'myresluger', 'ko', 'undulat', 'citron', 'flødebolle', 'hjernedød', 'hammerslag', 'øgenavn','fregner','pippi'];
+let words = ['ged', 'myresluger', 'ko', 'undulat', 'citron', 'flødebolle', 'hjernedød', 'hammerslag', 'øgenavn', 'fregner', 'pippi'];
 const noOfPlayers = 3;
-const turnSeconds = 10;
-const prepareSeconds = 5;
+const turnSeconds = 30;
+const prepareSeconds = 8;
 let timer;
 let currentTurn = 0;
 let state = 'prepare';
@@ -31,7 +31,9 @@ function nySocket(socket) {
   console.log('Ny forbindelse med socket.id: ' + socket.id);
   socket.emit('yourId', socket.id);
 
+  //Når klienter sender et brugernavn
   socket.on('username', addPlayer);
+
   function addPlayer(username) {
     if (noOfPlayers > players.length) {
       console.log("Lægger ny spiller til: " + username);
@@ -42,7 +44,7 @@ function nySocket(socket) {
       });
       socket.emit('stateMessage', 'Venter på andre spillere..');
     }
-
+    //Når der er nok spillere
     if (noOfPlayers == players.length) {
       console.dir(players);
       playersReady();
@@ -50,12 +52,13 @@ function nySocket(socket) {
   }
 
   socket.on('guess', guess);
-  function guess(guess){
+
+  function guess(guess) {
     console.log('Gæt: ' + guess + ' ' + currentWord + ' ' + socket.id);
-    if(guess == currentWord){
-      players[currentTurn].point +=5;
-      players.forEach(function(p,i){
-        if(p.id == socket.id){
+    if (guess == currentWord) {
+      players[currentTurn].point += 5;
+      players.forEach(function (p, i) {
+        if (p.id == socket.id) {
           players[i].point += 5;
           console.log('Ord gættet af ' + players[i].username);
         }
@@ -66,7 +69,7 @@ function nySocket(socket) {
 
   function playersReady() {
     currentTurn++;
-    if (currentTurn == noOfPlayers){
+    if (currentTurn == noOfPlayers) {
       currentTurn = 0;
     }
     clearInterval(timer);
@@ -80,11 +83,11 @@ function nySocket(socket) {
     console.log('starter playersReady - ord: ' + currentWord + ' tur: ' + currentTurn);
   }
 
+  //Kører hvert sekund...
   function tick() {
     if (state == 'prepare' && seconds <= 0) {
       state = 'playing';
       seconds = turnSeconds;
-
     }
     if (state == 'playing' && seconds <= 0) {
       playersReady();
@@ -93,7 +96,6 @@ function nySocket(socket) {
       state: state,
       seconds: seconds,
     }
-
     io.sockets.emit('gameControl', stateMessage);
     console.log(stateMessage);
     seconds--;
@@ -107,13 +109,13 @@ function nySocket(socket) {
     players.forEach(function (p, i) {
       if (p.id == socket.id) {
         players.splice(i, 1);
-        seconds = prepareSeconds;
-        clearInterval(timer);
-        socket.emit('stateMessage', 'Venter på andre spillere..');
       }
     });
+    clearInterval(timer);
+    io.sockets.emit('stateWaiting');
   }
 
+  //Modtag og videresend tegninger
   socket.on('drawingClient', sendDrawing);
 
   function sendDrawing(data) {
