@@ -51,8 +51,8 @@ function nySocket(socket) {
     }
   }
 
+  //Modtag gæt fra klienter
   socket.on('guess', guess);
-
   function guess(guess) {
     console.log('Gæt: ' + guess + ' ' + currentWord + ' ' + socket.id);
     if (guess == currentWord) {
@@ -67,6 +67,7 @@ function nySocket(socket) {
     }
   }
 
+  //Når spillere er klar til en ny runde
   function playersReady() {
     currentTurn++;
     if (currentTurn == noOfPlayers) {
