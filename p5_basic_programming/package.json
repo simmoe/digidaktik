@@ -1,0 +1,11 @@
+{
+  "name": "p5_beginner",
+  "version": "1.0.0",
+  "description": "Javascript tutorials targeted highschool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simon Moe",
+  "license": "ISC"
+}
