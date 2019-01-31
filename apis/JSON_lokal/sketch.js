@@ -7,24 +7,16 @@ function preload() {
 }
 
 function setup() {
-    noCanvas();
-    //Hent titlen på datafilen
-    createElement('h1', data.description);
-    //Hent en fugl
-    var bird = data.birds[1].members[2];
-    createP(bird);
-
-    //Lad os prøve at lave en liste med alle fuglefamilier    
-    //Først laver vi en variabel der indeholder alle fuglene
-    var birds = data.birds;
-    //Så løber vi igennem dem, og udskriver familienavnet
-    birds.forEach(element => {
-        createElement('h1', element.family);
-        //Og hvis vi også vil udskrive fuglene i hver familie, laver vi en ny variabel med selve fuglene i - og?
-    });
+    console.log(data);
 }
 
 /*Opgaver
+
+Lad os prøve at lave en liste med alle fuglefamilier    
+Først laver vi en variabel der indeholder alle fuglene
+var birds = data.birds;
+
+Så løber vi igennem dem, og udskriver familienavnet
 
 Prøv at udskrive familien "Penguins" og dens members
 
