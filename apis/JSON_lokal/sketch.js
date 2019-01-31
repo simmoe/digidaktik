@@ -25,4 +25,5 @@ prøv at tilføje et link øverst, som henviser til kilden (source)
 Find selv et JSON datasæt, fx her: https://github.com/dariusk/corpora/tree/master/data
 Lav en overskuelig liste med indholdet
 
+Prøv at skrive en JSON fil selv, som beskriver...
 */
