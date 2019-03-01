@@ -2,18 +2,32 @@
 Modificeret til gymnasiebrug af Simon Moe*/
 
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(40, 40);
     background(0);
+    background(255);
+    for(var x = 0; x <= width; x++){
+        for(var y = 0; y <= height; y++){
+            console.log(x, y);
+            col = returnColor(x, y);
+            stroke(col);
+            point(x, y);
+        }
+    }
 }
 
+function draw(){
+}
 
+function returnColor(x, y){
+    //Udfyld beregning her og returner farvekode 0 eller 255 
+}
 /*
 
 I PLENUM
 
 Vi vil prøve at lave et program som laver skærmen sort-hvid ternet for hver pixel. 
 
-Først skal vi oprette et loop i et loop; Det første loop løber alle punkter på x-aksen igennem - det næste alle punkter på y-aksen.
+Først har vi oprettet et loop i et loop; Det første loop løber alle punkter på x-aksen igennem - det næste alle punkter på y-aksen.
 
 Vi skal nu tænke sådan, at for hvert punkt vi kommer til på x-aksen i den første løkke, skal vi løbe HELE y-aksen igennem i en ny løkke - og SÅ tegne hvert punkt. 
 
